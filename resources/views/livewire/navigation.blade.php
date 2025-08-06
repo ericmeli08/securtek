@@ -106,17 +106,17 @@
                     <a href="{{ route('contact') }}" class="text-gray-700 flex items-center hover:text-securtek-blue transition-colors duration-300">
                         Contact
                     </a>
-                    <button class="pl-5">
+                    <a href="{{ route('search') }}" class="pl-5">
                         <svg class="w-6 h-6 text-securtek-blue font-bold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
                                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                         </svg>
-                    </button>
+                    </a>
                 </div>
 
                 <!-- User Actions -->
                 <div class="hidden md:flex items-center space-x-4">
-                    <a href="#" class="text-blue-600 hover:text-blue-800 text-sm">Become a Dealer</a>
+                    <a href="{{ route('become-dealer') }}" class="text-blue-600 hover:text-blue-800 text-sm">Become a Dealer</a>
                     <span class="text-gray-400">|</span>
                     <a href="#" class="text-blue-600 hover:text-blue-800 text-sm">Login</a>
 

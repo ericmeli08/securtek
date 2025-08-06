@@ -1,18 +1,18 @@
 <div>
     <!-- Hero Section -->
     <section class="hero-section relative  flex items-center ">
-        <div class="relative h-[65vh] w-full">
+        <div class="relative min-h-[65vh] w-full">
             <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 style="background-image: url('https://images.pexels.com/photos/5063532/pexels-photo-5063532.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&fit=crop');">
             </div>
             <div style="clip-path: polygon(0 0, 50% 0, 25% 100%, 0 100%);"
-                class="absolute bottom-0 right-0 w-[100%] h-[100%] bg-white  ">
+                class="absolute bottom-0 right-0 w-[100%] min-h-[100%] bg-white  ">
             </div>
             <div style="clip-path: polygon(0 0,  100% 0 , 0 100%);"
-                class="absolute top-0 left-0 w-[13%] h-[30%] bg-primary-700/70 bg-opacity-70 ">
+                class="absolute top-0 left-0 w-[13%] min-h-[30%] bg-primary-700/70 bg-opacity-70 ">
             </div>
             <div style="clip-path: polygon(0 15%, 0% 100%, 20% 100%);"
-                class="absolute bottom-0 right-0 w-[100%] h-[100%] bg-securtek-lime/90  ">
+                class="absolute bottom-0 right-0 w-[100%] min-h-[100%] bg-securtek-lime/90  ">
             </div>
 
             <div class="relative z-10 max-w-7xl h-full pt-20  px-4 sm:px-6 lg:px-32 text-white">
@@ -50,10 +50,10 @@
     <!-- Bundle Promotion -->
     <section class="py-16 bg-gradient-to-r relative from-blue-50 to-blue-100">
         <div style="clip-path: polygon(0 0%, 100% 0%, 0% 100%);"
-                class="absolute top-0 left-0 w-[17%] h-[100%] bg-securtek-lime/90  ">
+                class="absolute top-0 left-0 w-[17%] min-h-[100%] bg-securtek-lime/90  ">
             </div>
         <div style="clip-path: polygon(0 0%, 100% 0%, 100% 100%);"
-                class="absolute top-0 right-0 w-[20%] h-[100%] bg-primary-700/90  ">
+                class="absolute top-0 right-0 w-[20%] min-h-[100%] bg-primary-700/90  ">
             </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="text-blue-600 w-10 h-10 mx-auto mb-4">

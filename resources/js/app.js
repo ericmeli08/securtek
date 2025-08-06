@@ -24,3 +24,37 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+
+// Touch/swipe support for mobile carousel
+let touchStartX = 0;
+let touchEndX = 0;
+
+document.addEventListener('touchstart', function(event) {
+    touchStartX = event.changedTouches[0].screenX;
+});
+
+document.addEventListener('touchend', function(event) {
+    touchEndX = event.changedTouches[0].screenX;
+    handleSwipe();
+});
+
+function handleSwipe() {
+    const swipeThreshold = 50;
+    const diff = touchStartX - touchEndX;
+    
+    if (Math.abs(diff) > swipeThreshold) {
+        if (diff > 0) {
+            // Swipe left - next slide
+            if (window.Livewire) {
+                window.Livewire.emit('nextSlide');
+            }
+        } else {
+            // Swipe right - previous slide
+            if (window.Livewire) {
+                window.Livewire.emit('prevSlide');
+            }
+        }
+    }
+}
+

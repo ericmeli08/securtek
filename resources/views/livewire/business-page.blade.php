@@ -1,18 +1,18 @@
 <div>
     <!-- Hero Section -->
     <section class="hero-section relative  flex items-center ">
-        <div class="relative h-[70vh] w-full">
+        <div class="relative min-h-[70vh] w-full">
             <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 style="background-image: url('https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&fit=crop');">
             </div>
             <div style="clip-path: polygon(0 0, 50% 0, 25% 100%, 0 100%);"
-                class="absolute bottom-0 right-0 w-[100%] h-[100%] bg-white  ">
+                class="absolute bottom-0 right-0 w-[100%] min-h-[100%] bg-white  ">
             </div>
             <div style="clip-path: polygon(0 0,  100% 0 , 0 100%);"
-                class="absolute top-0 left-0 w-[13%] h-[35%] bg-primary-700/70 bg-opacity-70 ">
+                class="absolute top-0 left-0 w-[13%] min-h-[35%] bg-primary-700/70 bg-opacity-70 ">
             </div>
             <div style="clip-path: polygon(0 20%, 0% 100%, 20% 100%);"
-                class="absolute bottom-0 right-0 w-[100%] h-[100%] bg-securtek-lime/90  ">
+                class="absolute bottom-0 right-0 w-[100%] min-h-[100%] bg-securtek-lime/90  ">
             </div>
 
             <div class="relative z-10 max-w-7xl h-full pt-32  px-4 sm:px-6 lg:px-32 text-white">
@@ -104,7 +104,7 @@
     <!-- Camera Features -->
     <section class="py-7 bg-gray-100">
         <div class="max-full flex flex-col gap-7">
-            <div class="grid grid-cols-1 h-[70vh] relative md:grid-cols-3 gap-5">
+            <div class="grid grid-cols-1 min-h-[70vh] relative md:grid-cols-3 gap-5">
                 <!-- Arm/Disarm -->
                 <div
                     class="bg-white justify-center flex relative col-span-1 overflow-hidden bg-[url('https://images.pexels.com/photos/2882509/pexels-photo-2882509.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop')] ">
@@ -137,7 +137,7 @@
             </div>
 
 
-            <div class="grid grid-cols-1 h-[70vh] relative md:grid-cols-3 gap-5">
+            <div class="grid grid-cols-1 min-h-[70vh] relative md:grid-cols-3 gap-5">
                 <!-- Smart Thermostat -->
                 <div
                     class="relative col-span-2 bg-cover overflow-hidden bg-[url('https://images.pexels.com/photos/4386405/pexels-photo-4386405.jpeg?auto=compress&cs=tinysrgb&w=400&h=320&fit=crop')] ">

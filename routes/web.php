@@ -32,6 +32,8 @@ Route::get('/partners', PartnersPage::class)->name('partners');
 Route::get('/careers', CareersPage::class)->name('careers');
 Route::get('/support', SupportPage::class)->name('support');
 Route::get('/contact', \App\Livewire\ContactPage::class)->name('contact');
+Route::get('/search', \App\Livewire\SearchPage::class)->name('search');
+Route::get('/become-dealer', \App\Livewire\BecomeDealerPage::class)->name('become-dealer');
 
 
 Route::view('dashboard', 'dashboard')

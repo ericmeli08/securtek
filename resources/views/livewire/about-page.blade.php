@@ -1,6 +1,6 @@
 <div class="flex flex-col gap-0">
     <!-- Hero Section -->
-    <section class="hero-section relative w-screen overflow-hidden h-[70vh] lg:min-h-screen flex items-center">
+    <section class="hero-section relative w-screen overflow-hidden min-h-[70vh] lg:min-h-screen flex items-center">
         <!-- Background Carousel -->
         <div class="absolute inset-0 z-0">
             <div id="hero-carousel" class="relative w-full h-full">
@@ -15,7 +15,7 @@
                 </div>
             </div>
         </div>
-        {{-- <img class="absolute   w-[200vw] h-[100%] object-cover  lg:h-[1000%]" src="{{ asset('images/slide-triangle-overlay.svg') }}"
+        {{-- <img class="absolute   w-[200vw] min-h-[100%] object-cover  lg:min-h-[1000%]" src="{{ asset('images/slide-triangle-overlay.svg') }}"
             alt=""> --}}
 
         <div class="absolute top-0 left-0 w-full h-full ">
@@ -23,27 +23,27 @@
 
                 <!-- Bas droite (bleu foncé en triangle) -->
                 <div style="clip-path: polygon(0 100%, 100% 100%, 100% 0);"
-                    class="absolute bottom-0 right-0 w-[10%] h-[25%] bg-primary-700/50 bg-opacity-70 ">
+                    class="absolute bottom-0 right-0 w-[10%] min-h-[25%] bg-primary-700/50 bg-opacity-70 ">
                 </div>
 
                 <!-- Haut centre-droit (bleu clair transparent en triangle) -->
                 <div style="clip-path: polygon(0 0, 100% 0, 30% 100%, 0 100%);"
-                    class="absolute hidden md:block top-0 bottom-0  w-[65%] h-[100%] bg-primary-700/50 bg-opacity-60 ">
+                    class="absolute hidden md:block top-0 bottom-0  w-[65%] min-h-[100%] bg-primary-700/50 bg-opacity-60 ">
                 </div>
                 <div style="clip-path: polygon(0 0, 100% 0, 5% 100%, 0 100%);"
-                    class="absolute md:hidden top-0 bottom-0  w-[98%] h-[100%] bg-primary-700/50 bg-opacity-60 "></div>
+                    class="absolute md:hidden top-0 bottom-0  w-[98%] min-h-[100%] bg-primary-700/50 bg-opacity-60 "></div>
 
                 <div style="clip-path: polygon(0 100%, 0 0, 100% 100%);"
-                    class="absolute bottom-0 hidden md:block left-0 w-[20%] h-[40%] bg-green-700/90 bg-opacity-70 ">
+                    class="absolute bottom-0 hidden md:block left-0 w-[20%] min-h-[40%] bg-green-700/90 bg-opacity-70 ">
                 </div>
                 <div style="clip-path: polygon(0 100%, 0 0, 100% 100%);"
-                    class="absolute bottom-0 md:hidden left-0 w-[60%] h-[50%] bg-green-700 bg-opacity-70 ">
+                    class="absolute bottom-0 md:hidden left-0 w-[60%] min-h-[50%] bg-green-700 bg-opacity-70 ">
                 </div>
                 <div style="clip-path: polygon(0 0, 100% 0, 1% 100%, 0 100%);"
-                    class="absolute top-0 bottom-0 hidden md:block w-[45%] h-[100%] bg-primary-700/60 bg-opacity-60 ">
+                    class="absolute top-0 bottom-0 hidden md:block w-[45%] min-h-[100%] bg-primary-700/60 bg-opacity-60 ">
                 </div>
                 <div style="clip-path: polygon(0 0, 70% 0, 0 100%);"
-                    class="absolute top-0 left-0 md:hidden w-[100%] h-[100%] bg-primary-700/60 bg-opacity-60 "></div>
+                    class="absolute top-0 left-0 md:hidden w-[100%] min-h-[100%] bg-primary-700/60 bg-opacity-60 "></div>
 
             </div>
         </div>
@@ -83,7 +83,7 @@
         <!-- Contact Form Section -->
         <section class="bg-blue-600 relative text-white py-16">
             <div style="clip-path: polygon(0 0 ,0 100%, 100% 0);"
-                class="absolute top-0 hidden md:block left-0 w-[20%] h-[40%] bg-securtek-lime/70 bg-opacity-70 ">
+                class="absolute top-0 hidden md:block left-0 w-[20%] min-h-[40%] bg-securtek-lime/70 bg-opacity-70 ">
             </div>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -148,14 +148,14 @@
         <!-- 24/7 Monitoring Section -->
         <section class=" overflow-hidden bg-white">
             <div class="max-w-full mx-auto ">
-                <div class="grid grid-cols-1 h-[80vh] lg:grid-cols-2  ">
-                    <div class="order-2 flex justify-center items-center flex-col  relative text-center lg:order-1">
+                <div class="grid grid-cols-1 min-h-[80vh]  lg:grid-cols-2  ">
+                    <div class="order-2 py-10 flex justify-center  items-center flex-col  relative text-center lg:order-1">
 
                         <div style="clip-path: polygon(0 0, 100% 0, 100% 100%);"
-                            class="absolute top-0 hidden md:block right-0 w-[20%] h-[40%] bg-green-700/70 bg-opacity-70 ">
+                            class="absolute top-0 hidden md:block right-0 w-[20%] min-h-[40%] bg-green-700/70 bg-opacity-70 ">
                         </div>
                         <div style="clip-path: polygon(0 100%, 100% 100%, 100% 0);"
-                            class="absolute bottom-0 hidden md:block right-0 w-[20%] h-[40%] bg-primary-700/70 bg-opacity-70 ">
+                            class="absolute bottom-0 hidden md:block right-0 w-[20%] min-h-[40%] bg-primary-700/70 bg-opacity-70 ">
                         </div>
                         <div class="text-blue-600 mx-auto mb-6">
                             <svg class="w-20 w-20 mx-auto" aria-hidden="true" data-prefix="fal" data-icon="eye"
@@ -184,7 +184,7 @@
                         </p>
                         <p class="text-blue-600 font-semibold mt-4">No exceptions.</p>
                     </div>
-                    <div class="order-1 relative w-full h-full lg:order-2">
+                    <div class="order-1 relative w-full h-full lg: py-10">
                         <img src="https://images.pexels.com/photos/4545946/pexels-photo-4545946.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
                             alt="24/7 Monitoring" class=" w-full object-cover h-full ">
                     </div>
@@ -195,17 +195,17 @@
         <!-- Professional Installation Section -->
         <section class=" overflow-hidden bg-gray-50">
             <div class="max-w-full mx-auto ">
-                <div class="grid h-[80vh] grid-cols-1 lg:grid-cols-2">
+                <div class="grid min-h-[80vh]  grid-cols-1 lg:grid-cols-2">
                     <div>
                         <img src="https://images.pexels.com/photos/5691659/pexels-photo-5691659.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
                             alt="Professional Installation" class=" w-full h-full  object-cover">
                     </div>
-                    <div class="flex flex-col relative text-center justify-center items-center">
+                    <div class="flex flex-col relative py-10 text-center justify-center items-center">
                         <div style="clip-path: polygon(0 0, 100% 0, 100% 100%);"
-                            class="absolute top-0 hidden md:block right-0 w-[20%] h-[40%] bg-primary-700/70 bg-opacity-70 ">
+                            class="absolute top-0 hidden md:block right-0 w-[20%] min-h-[40%] bg-primary-700/70 bg-opacity-70 ">
                         </div>
                         <div style="clip-path: polygon(0 0, 100% 0, 0 100%);"
-                            class="absolute bottom-0 hidden md:block left-0 w-[20%] h-[25%] bg-green-700/70 bg-opacity-70 ">
+                            class="absolute bottom-0 hidden md:block left-0 w-[20%] min-h-[25%] bg-green-700/70 bg-opacity-70 ">
                         </div>
 
                         <div class="text-blue-600 mx-auto mb-6">
@@ -234,12 +234,12 @@
         </section>
 
         <!-- Quick Facts Section -->
-        <section class=" relative h-[90vh] flex justify-center items-center bg-primary-100">
+        <section class=" relative py-10 min-h-[90vh] flex justify-center items-center bg-primary-100">
             <div style="clip-path: polygon(0 0%, 100% 0%, 0% 100%);"
-                class="absolute z-10 top-0 left-0 w-[25%] h-[80%] bg-primary-700/70  ">
+                class="absolute z-10 top-0 left-0 w-[25%] min-h-[80%] bg-primary-700/70  ">
             </div>
             <div style="clip-path: polygon(0 0%, 0 100% , 100% 100%);"
-                class="absolute z-10 bottom-0 left-0 w-[17%] h-[40%] bg-securtek-lime/70  ">
+                class="absolute z-10 bottom-0 left-0 w-[17%] min-h-[40%] bg-securtek-lime/70  ">
             </div>
             <div class="max-w-5xl relative mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
@@ -297,13 +297,13 @@
         <!-- Support Section -->
         <section class=" bg-gray-50">
             <div class="max-w-full ">
-                <div class="grid grid-cols-1 h-[80vh] lg:grid-cols-2  ">
-                    <div class="flex justify-center  items-center flex-col relative text-center">
+                <div class="grid grid-cols-1 min-h-[80vh]  lg:grid-cols-2  ">
+                    <div class="flex justify-center  py-10 items-center flex-col relative text-center">
                         <div style="clip-path: polygon(0 0%, 40% 0% , 100% 100%, 0 100%);"
-                            class="absolute z-10 top-0 left-0 w-[20%] h-[20%] bg-primary-700/70  ">
+                            class="absolute z-10 top-0 left-0 w-[20%] min-h-[20%] bg-primary-700/70  ">
                         </div>
                         <div style="clip-path: polygon(0 0%, 100% 0% , 100% 100%, 60% 100%);"
-                            class="absolute z-10 bottom-0 right-0 w-[20%] h-[10%] bg-securtek-lime/70  ">
+                            class="absolute z-10 bottom-0 right-0 w-[20%] min-h-[10%] bg-securtek-lime/70  ">
                         </div>
                         <div class="text-blue-600 mx-auto mb-6">
                             <i class="fa-solid fa-headset text-7xl"></i>
@@ -332,13 +332,13 @@
         <section class=" bg-white">
             <div class="">
                 <div class="grid grid-cols-1 lg:grid-cols-2 ">
-                    <div class="order-2 lg:order-1">
+                    <div class=" py-10 lg:order-1">
                         <img src="https://images.pexels.com/photos/4545946/pexels-photo-4545946.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
                             alt="History" class=" w-full h-full object-cover">
                     </div>
-                    <div class="order-1 flex flex-col items-center justify-center relative lg:order-2">
+                    <div class="order-1 flex flex-col py-10 items-center justify-center relative lg:py-10">
                          <div style="clip-path: polygon( 100% 0% , 100% 100%, 0% 100%);"
-                            class="absolute z-10 bottom-0 right-0 w-[25%] h-[50%] bg-securtek-lime/70  ">
+                            class="absolute z-10 bottom-0 right-0 w-[25%] min-h-[50%] bg-securtek-lime/70  ">
                         </div>
                         <div class="text-blue-600 mb-6">
                             <i class="fa-solid fa-clock-rotate-left text-7xl"></i>
@@ -357,12 +357,12 @@
         </section>
 
         <!-- Partners Section -->
-        <section class="py-16 h-[50vh] flex justify-center items-center relative bg-gray-100">
+        <section class=" min-h-[50vh] flex justify-center items-center relative bg-gray-100">
             <div style="clip-path: polygon(0 0%, 100% 0%, 0% 100%);"
-                class="absolute z-10 top-0 left-0 w-[25%] h-[80%] bg-primary-700/70  ">
+                class="absolute z-10 top-0 left-0 w-[25%] min-h-[80%] bg-primary-700/70  ">
             </div>
             <div style="clip-path: polygon(0 0%, 0 100% , 100% 100%);"
-                class="absolute z-10 bottom-0 left-0 w-[17%] h-[40%] bg-securtek-lime/70  ">
+                class="absolute z-10 bottom-0 left-0 w-[17%] min-h-[40%] bg-securtek-lime/70  ">
             </div>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-wrap justify-center items-center space-x-8 lg:space-x-16">
@@ -396,9 +396,9 @@
         </section>
 
         <!-- Our Locations Section -->
-        <section class="bg-blue-600 h-[30vh] flex items-center justify-center text-white py-16">
+        <section class="bg-blue-600 min-h-[30vh] flex items-center justify-center text-white py-16">
             <div class="max-w-7xl mx-auto px-4 flex gap-10 items-center sm:px-6 lg:px-8 text-center">
-                <h2 class="text-5xl font-bold ">Our Locations</h2>
+                <h2 class="lg:text-5xl text-xl font-bold ">Our Locations</h2>
                 <button
                     class="bg-securtek-lime text-white text-xl font-semibold py-3 px-8 rounded-lg hover:bg-lime-400 transition-colors">
                     FIND A DEALER
