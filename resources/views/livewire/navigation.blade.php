@@ -38,28 +38,80 @@
                                 class="block px-4 py-2 text-white hover:bg-primary-800 transition-colors">
                                 Packages
                             </a>
-                            <a href="#"
+                            <a href="{{ route('warranty') }}"
                                 class="block px-4 py-2 text-white hover:bg-primary-800 transition-colors">
                                 Warranty
                             </a>
                         </div>
                     </div>
 
-                    <a href="#"
-                        class="text-gray-700 hover:text-securtek-blue transition-colors duration-300">Business</a>
-                    <a href="#"
-                        class="text-gray-700 hover:text-securtek-blue transition-colors duration-300">About</a>
-                    <a href="#"
-                        class="text-gray-700 hover:text-securtek-blue transition-colors duration-300">Support</a>
-                    <a href="#" class="text-gray-700 flex items-center hover:text-securtek-blue transition-colors duration-300">
-                        Contact
-                        <button class="pl-5">
-                            <svg class="w-6 h-6 text-securtek-blue font-bold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    <!-- Business -->
+                    <div class="relative dropdown">
+                        <a href="{{ route('business') }}"
+                            class="text-gray-700 hover:text-securtek-blue transition-colors duration-300 flex items-center {{ request()->routeIs('home-security') ? 'text-securtek-blue font-semibold' : '' }}">
+                            Business
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
                             </svg>
-                        </button>
+                        </a>
+                        <div class="dropdown-menu w-[250px] bg-primary-500 rounded-[0px] border-t-4 border-t-primary-800 text-white">
+                            <a href="{{ route('certification') }}"
+                                class="block px-4 py-2 text-white hover:bg-primary-800 transition-colors">
+                                ULC Certification
+                            </a>
+                            <a href="{{ route('warranty') }}"
+                                class="block px-4 py-2 text-white hover:bg-primary-800 transition-colors">
+                                Warranty
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- About -->
+                    <div class="relative dropdown">
+                        <a href="{{ route('about') }}"
+                            class="text-gray-700 hover:text-securtek-blue transition-colors duration-300 flex items-center {{ request()->routeIs('home-security') ? 'text-securtek-blue font-semibold' : '' }}">
+                            About
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <div class="dropdown-menu w-[250px] bg-primary-500 rounded-[0px] border-t-4 border-t-primary-800 text-white">
+                            <a href="{{ route('our-team') }}"
+                                class="block px-4 py-2 text-white hover:bg-primary-800 transition-colors">
+                                Our Team
+                            </a>
+                            <a href="{{ route('partners') }}"
+                                class="block px-4 py-2 text-white hover:bg-primary-800 transition-colors">
+                                Partners and Affiliations
+                            </a>
+                            <a href="{{ route('careers') }}"
+                                class="block px-4 py-2 text-white hover:bg-primary-800 transition-colors">
+                                Careers
+                            </a>
+                            <a href="{{ route('support') }}"
+                                class="block px-4 py-2 text-white hover:bg-primary-800 transition-colors">
+                                Support
+                            </a>
+
+                        </div>
+                    </div>
+
+
+                   
+                    <a href="{{ route('support') }}"
+                        class="text-gray-700 hover:text-securtek-blue transition-colors duration-300">Support</a>
+                    <a href="{{ route('contact') }}" class="text-gray-700 flex items-center hover:text-securtek-blue transition-colors duration-300">
+                        Contact
                     </a>
+                    <button class="pl-5">
+                        <svg class="w-6 h-6 text-securtek-blue font-bold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </button>
                 </div>
 
                 <!-- User Actions -->

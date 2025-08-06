@@ -20,7 +20,6 @@
                     <h1 class="text-5xl text-primary-800 lg:text-6xl font-bold mb-4">
                         Packages
                     </h1>
-
                 </div>
             </div>
 
