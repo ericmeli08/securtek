@@ -184,7 +184,7 @@
                         </p>
                         <p class="text-blue-600 font-semibold mt-4">No exceptions.</p>
                     </div>
-                    <div class="order-1 relative w-full h-full lg: py-10">
+                    <div class="order-1 relative w-full h-full ">
                         <img src="https://images.pexels.com/photos/4545946/pexels-photo-4545946.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
                             alt="24/7 Monitoring" class=" w-full object-cover h-full ">
                     </div>
@@ -243,7 +243,7 @@
             </div>
             <div class="max-w-5xl relative mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-                <h2 class=" text-2xl lg:text-6xl font-bold text-blue-600 mb-16">Quick Facts</h2>
+                <h2 class=" text-3xl lg:text-6xl font-bold text-blue-600 mb-16">Quick Facts</h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                     <!-- Monitoring Centres -->
@@ -266,7 +266,7 @@
                     <!-- Customers -->
                     <div class="text-center">
                         <div class="text-blue-600 mb-6 lg:mb-10 flex justify-center">
-                            <i class="fa-solid fa-users  text-2xl md:text-4xl lg:text-7xl"></i>
+                            <i class="fa-solid fa-users  text-7xl"></i>
                         </div>
                         <div class=" text-2xl lg:text-6xl font-bold text-blue-600 mb-2">100K</div>
                         <h3 class="text-3xl font-semibold text-blue-600 mb-2">Customers</h3>
@@ -280,7 +280,7 @@
                     <!-- Authorized Dealers -->
                     <div class="text-center">
                         <div class="text-blue-600 mb-6 lg:mb-10 flex justify-center">
-                            <i class="fa-solid fa-shop text-2xl md:text-4xl lg:text-7xl"></i>
+                            <i class="fa-solid fa-shop text-7xl"></i>
                         </div>
                         <div class=" text-2xl lg:text-6xl font-bold text-blue-600 mb-2">66</div>
                         <h3 class="text-3xl font-semibold text-blue-600 mb-2">Authorized Dealers</h3>
@@ -332,7 +332,7 @@
         <section class=" bg-white">
             <div class="">
                 <div class="grid grid-cols-1 lg:grid-cols-2 ">
-                    <div class=" py-10 lg:order-1">
+                    <div class="  lg:order-1">
                         <img src="https://images.pexels.com/photos/4545946/pexels-photo-4545946.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
                             alt="History" class=" w-full h-full object-cover">
                     </div>
