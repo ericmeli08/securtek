@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1440px" height="789px" viewBox="0 0 1440 789" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Triangle graphics</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="SecurTek-home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -114.000000)">
+        <g id="Main-Image-Slider" transform="translate(-676.000000, -217.000000)">
+            <g id="Triangle-graphics">
+                <polygon id="Triangle" fill="#006DBF" opacity="0.886209239" transform="translate(853.968151, 563.136585) rotate(-42.000000) translate(-853.968151, -563.136585) " points="872.816421 267.76116 1367.03434 712.75697 340.901966 858.512011"></polygon>
+                <polygon id="Rectangle-7" fill="#93B209" style="mix-blend-mode: multiply;" opacity="0.612092391" points="0 331 327.699403 331 988.069426 1120 660.370023 1120"></polygon>
+                <polygon id="Rectangle-7-Copy" fill="#006DBF" style="mix-blend-mode: multiply;" opacity="0.397588315" points="1663.06943 331 1335.37002 331 675 1120 1002.6994 1120"></polygon>
+                <polygon id="Rectangle-7-Copy-2" fill="#006DBF" style="mix-blend-mode: multiply;" opacity="0.607280344" points="2903.06943 331 2575.37002 331 1915 1120 2242.6994 1120"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
