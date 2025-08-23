@@ -3,7 +3,7 @@
     <section class="hero-section relative  flex items-center ">
         <div class="relative min-h-[65vh] w-full">
             <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                style="background-image: url('https://images.pexels.com/photos/5063532/pexels-photo-5063532.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&fit=crop');">
+                style="background-image: url('{{ asset('images/about/find-a-dealer/hero.jpg') }}');">
             </div>
             <div style="clip-path: polygon(0 0, 50% 0, 25% 100%, 0 100%);"
                 class="absolute bottom-0 right-0 w-[100%] min-h-[100%] bg-white  ">

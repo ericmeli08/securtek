@@ -103,7 +103,8 @@
             <div class="grid grid-cols-1 min-h-[70vh] relative md:grid-cols-3 gap-5">
                 <!-- Arm/Disarm -->
                 <div
-                    class="bg-white justify-center flex relative col-span-1 bg-cover overflow-hidden bg-[url('{{ asset('images/home/home-security/arm-disarm.jpg') }}')] ">
+                    class="bg-white justify-center flex relative col-span-1 bg-cover overflow-hidden bg-[url('{{ asset('images/home/home-security/arm-disarm.jpg') }}')] "
+                    style="background-image: url('{{ asset('images/home/home-security/arm-disarm.jpg') }}');">
                     <div class=" p-7 z-10 max-w-xs h-fit mt-5 flex flex-col  rounded-lg bg-gray-200/70 justify-center">
                         <h3 class="text-3xl font-bold text-gray-900 mb-4">Arm/Disarm</h3>
                         <p class="text-gray-800 mb-6">
@@ -117,7 +118,8 @@
 
                 <!-- Smart Thermostat -->
                 <div
-                    class="relative col-span-2 bg-cover overflow-hidden bg-[url('{{ asset('images/home/home-security/smart-thermostat.jpg') }}')] ">
+                    class="relative col-span-2 bg-cover overflow-hidden bg-[url('{{ asset('images/home/home-security/smart-thermostat.jpg') }}')] "
+                    style="background-image: url('{{ asset('images/home/home-security/smart-thermostat.jpg') }}');">
                     <div class="p-7 m-5 max-w-2xl h-fit mt-5 flex flex-col rounded-lg bg-gray-200/70 justify-center">
                         <h3 class="text-3xl font-bold text-gray-900 mb-4">Smart Thermostat</h3>
                         <p class="text-gray-800 mb-6">
@@ -136,7 +138,8 @@
             <div class="grid grid-cols-1 min-h-[70vh] relative md:grid-cols-3 gap-5">
                 <!-- Smart Thermostat -->
                 <div
-                    class="relative col-span-2 bg-cover overflow-hidden bg-[url('https://images.pexels.com/photos/4386405/pexels-photo-4386405.jpeg?auto=compress&cs=tinysrgb&w=400&h=320&fit=crop')] ">
+                    class="relative col-span-2 bg-bottom bg-cover overflow-hidden bg-[url('{{ asset('images/home/home-security/smart-power-outlet.webp') }}')] "
+                    style="background-image: url('{{ asset('images/home/home-security/smart-power-outlet.jpg') }}');">
                     <div class="p-7 m-5 max-w-2xl h-fit mt-5 flex flex-col rounded-lg bg-gray-200/70 justify-center">
                         <h3 class="text-3xl font-bold text-gray-900 mb-4">Smart Power Outlets</h3>
                         <p class="text-gray-800 mb-6">
@@ -149,7 +152,8 @@
                 </div>
                 <!-- Arm/Disarm -->
                 <div
-                    class="bg-white justify-center flex relative col-span-1 overflow-hidden bg-[url('https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=400&h=320&fit=crop')] ">
+                    class="bg-white justify-center bg-cover flex relative col-span-1 overflow-hidden bg-[url('https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=400&h=320&fit=crop')] "
+                    style="background-image: url('{{ asset('images/home/home-security/lighting-control.jpg') }}');">
                     <div class=" p-7 z-10 max-w-xs h-fit mt-5 flex flex-col  rounded-lg bg-gray-200/70 justify-center">
                         <h3 class="text-3xl font-bold text-gray-900 mb-4">Lighting Control</h3>
                         <p class="text-gray-800 mb-6">
@@ -166,7 +170,8 @@
             <div class="grid grid-cols-1 min-h-[70vh] relative md:grid-cols-3 gap-5">
                 <!-- Arm/Disarm -->
                 <div
-                    class="bg-white justify-center flex relative col-span-1 overflow-hidden bg-[url('https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=400&h=320&fit=crop')] ">
+                    class="bg-white justify-center bg-cover flex relative col-span-1 overflow-hidden bg-[url('https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=400&h=320&fit=crop')] "
+                    style="background-image: url('{{ asset('images/home/home-security/garage-door-control.jpg') }}');">
                     <div class=" p-7 z-10 max-w-xs h-fit mt-5 flex flex-col  rounded-lg bg-gray-200/70 justify-center">
                         <h3 class="text-3xl font-bold text-gray-900 mb-4">Garage Door Control</h3>
                         <p class="text-gray-800 mb-6">
@@ -179,7 +184,8 @@
 
                 <!-- Smart Thermostat -->
                 <div
-                    class="relative col-span-2 bg-cover overflow-hidden bg-[url('https://images.pexels.com/photos/7641825/pexels-photo-7641825.jpeg?auto=compress&cs=tinysrgb&w=400&h=320&fit=crop')] ">
+                    class="relative col-span-2 bg-cover bg-center overflow-hidden bg-[url('https://images.pexels.com/photos/7641825/pexels-photo-7641825.jpeg?auto=compress&cs=tinysrgb&w=400&h=320&fit=crop')] "
+                    style="background-image: url('{{ asset('images/home/home-security/geofencing.jpg') }}');">
                     <div class="p-7 m-5 max-w-2xl h-fit mt-5 flex flex-col rounded-lg bg-gray-200/70 justify-center">
                         <h3 class="text-3xl font-bold text-gray-900 mb-4">Geofencing</h3>
                         <p class="text-gray-800 mb-6">
@@ -196,18 +202,19 @@
             <div class="grid grid-cols-1 min-h-[70vh] relative md:grid-cols-3 gap-5">
                 <!-- Smart Thermostat -->
                 <div
-                    class="relative col-span-2 bg-cover overflow-hidden bg-[url('https://images.pexels.com/photos/4386405/pexels-photo-4386405.jpeg?auto=compress&cs=tinysrgb&w=400&h=320&fit=crop')] ">
+                    class="relative col-span-2 bg-cover overflow-hidden bg-[url('https://images.pexels.com/photos/4386405/pexels-photo-4386405.jpeg?auto=compress&cs=tinysrgb&w=400&h=320&fit=crop')] "
+                    style="background-image: url('{{ asset('images/home/home-security/temperature-detection.webp') }}');">
                     <div class="p-7 m-5 max-w-2xl h-fit mt-5 flex flex-col rounded-lg bg-gray-200/70 justify-center">
                         <h3 class="text-3xl font-bold text-gray-900 mb-4">High/Low Temperature Detection</h3>
                         <p class="text-gray-800 mb-6">
                             Going away on holidays? We'll let you know if the temperature drastically changes in your
                             home on account of a broken furnace or air conditioner. </p>
-
                     </div>
                 </div>
                 <!-- Arm/Disarm -->
                 <div
-                    class="bg-white justify-center flex relative col-span-1 overflow-hidden bg-[url('https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=400&h=320&fit=crop')] ">
+                    class="bg-white justify-center bg-cover flex relative col-span-1 overflow-hidden bg-[url('https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=400&h=320&fit=crop')] "
+                    style="background-image: url('{{ asset('images/home/home-security/instant-notifications.png') }}');">
                     <div class=" p-7 z-10 max-w-xs h-fit mt-5 flex flex-col  rounded-lg bg-gray-200/70 justify-center">
                         <h3 class="text-3xl font-bold text-gray-900 mb-4">Instant Notifications</h3>
                         <p class="text-gray-800 mb-6">

@@ -5,14 +5,9 @@
         <div class="absolute inset-0 z-0">
             <div id="hero-carousel" class="relative w-full h-full">
                 <div class="hero-image active absolute inset-0 bg-cover bg-center bg-no-repeat"
-                    style="background-image: url('https://images.pexels.com/photos/1146603/pexels-photo-1146603.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop');">
+                    style="background-image: url('{{asset('images/become-dealer/hero.jpg')}}');">
                 </div>
-                <div class="hero-image inactive absolute inset-0 bg-cover bg-center bg-no-repeat"
-                    style="background-image: url('https://images.pexels.com/photos/4483762/pexels-photo-4483762.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop');">
-                </div>
-                <div class="hero-image inactive absolute inset-0 bg-cover bg-center bg-no-repeat"
-                    style="background-image: url('https://images.pexels.com/photos/5439434/pexels-photo-5439434.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop');">
-                </div>
+
             </div>
         </div>
         {{-- <img class="absolute   w-[200vw] min-h-[100%] object-cover  lg:min-h-[1000%]" src="{{ asset('images/slide-triangle-overlay.svg') }}"
@@ -57,7 +52,7 @@
                     class="text-4xl lg:text-7xl transition-all duration-500  font-bold mb-6 animate-fade-in">
                     Become a Dealer
                 </h1>
-                
+
 
             </div>
         </div>
@@ -203,7 +198,7 @@
         </section>
 
         <!-- Quick Facts Section -->
-        
+
 
         <!-- Support Section -->
         <section class=" bg-gray-50">
@@ -315,7 +310,7 @@
         </section>
 
         <!-- Partners Section -->
-        
+
     </div>
 
 

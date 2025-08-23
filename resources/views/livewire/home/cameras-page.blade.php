@@ -3,7 +3,7 @@
     <section class="hero-section relative  flex items-center ">
         <div class="relative min-h-[70vh] w-full">
             <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                style="background-image: url('https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&fit=crop');">
+                style="background-image: url('{{ asset('images/home/cameras/hero.jpg') }}');">
             </div>
             <div style="clip-path: polygon(0 0, 50% 0, 25% 100%, 0 100%);"
                 class="absolute bottom-0 right-0 w-[100%] min-h-[100%] bg-white  ">
@@ -70,9 +70,9 @@
                     </p>
                 </div>
                 <div class="space-y-3 mt-4">
-                    <button class="w-full btn-primary">CONTACT US</button>
+                    <button class="w-full bg-accent-500 hover:bg-accent-600 btn-primary">CONTACT US</button>
                     <button
-                        class="w-full bg-transparent hover:bg-orange-500 border border-orange-500 hover:text-white btn-primary">
+                        class="w-full bg-transparent text-accent-500 hover:bg-orange-500 border font-semibold border-orange-500 hover:text-white btn-primary">
                         SEE ALL BUNDLESS</button>
                 </div>
             </div>
@@ -85,19 +85,20 @@
             <div class="grid grid-cols-1 min-h-[70vh] relative md:grid-cols-3 gap-5">
                 <!-- Arm/Disarm -->
                 <div
-                    class="bg-white justify-center flex relative col-span-1 overflow-hidden bg-[url('https://images.pexels.com/photos/2882509/pexels-photo-2882509.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop')] ">
+                    class="bg-white justify-center  flex relative col-span-1 bg-cover overflow-hidden bg-[url('https://images.pexels.com/photos/2882509/pexels-photo-2882509.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop')] "
+                    style="background-image: url('{{ asset('images/home/cameras/video-look-in.jpg') }}')">
                     <div class=" p-7 z-10 max-w-xs h-fit mt-5 flex flex-col  rounded-lg bg-gray-200/70 justify-center">
                         <h3 class="text-3xl font-bold text-gray-900 mb-4">Video Look-In</h3>
                         <p class="text-gray-800 mb-6">
                             Wondering what went bump in the night? Take a peek without leaving the safety of your covers. Stream footage of your home directly to your smartphone from any of your connected cameras.
                         </p>
                     </div>
-
                 </div>
 
                 <!-- Smart Thermostat -->
                 <div
-                    class="relative col-span-2 bg-cover overflow-hidden bg-[url('https://images.pexels.com/photos/3992949/pexels-photo-3992949.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop')] ">
+                    class="relative col-span-2 bg-cover overflow-hidden bg-[url('https://images.pexels.com/photos/3992949/pexels-photo-3992949.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop')] "
+                    style="background-image: url('{{ asset('images/home/cameras/video-notifications.jpg') }}')">
                     <div class="p-7 m-5 max-w-2xl h-fit mt-5 flex flex-col rounded-lg bg-gray-200/70 justify-center">
                         <h3 class="text-3xl font-bold text-gray-900 mb-4">Video Notifications</h3>
                         <p class="text-gray-800 font-semibold mb-6">
@@ -115,7 +116,8 @@
             <div class="grid grid-cols-1 min-h-[70vh] relative md:grid-cols-3 gap-5">
                 <!-- Smart Thermostat -->
                 <div
-                    class="relative col-span-2 bg-cover overflow-hidden bg-[url('https://images.pexels.com/photos/4386405/pexels-photo-4386405.jpeg?auto=compress&cs=tinysrgb&w=400&h=320&fit=crop')] ">
+                    class="relative col-span-2 bg-cover overflow-hidden bg-[url('https://images.pexels.com/photos/4386405/pexels-photo-4386405.jpeg?auto=compress&cs=tinysrgb&w=400&h=320&fit=crop')] "
+                    style="background-image: url('{{ asset('images/home/cameras/outdoor-cameras.jpg') }}')">
                     <div class="p-7 m-5 max-w-2xl h-fit mt-5 flex flex-col rounded-lg bg-gray-200/70 justify-center">
                         <h3 class="text-3xl font-bold text-gray-900 mb-4">Outdoor Cameras</h3>
                         <p class="text-gray-800 mb-6">
@@ -126,7 +128,8 @@
                 </div>
                 <!-- Arm/Disarm -->
                 <div
-                    class="bg-white justify-center flex relative col-span-1 overflow-hidden bg-[url('https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=400&h=320&fit=crop')] ">
+                    class="bg-white justify-center flex bg-cover bg-right relative col-span-1 overflow-hidden bg-[url('https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=400&h=320&fit=crop')] "
+                    style="background-image: url('{{ asset('images/home/cameras/video-doorbell.jpg') }}')">
                     <div class=" p-7 z-10 max-w-xs h-fit mt-5 flex flex-col  rounded-lg bg-gray-200/70 justify-center">
                         <h3 class="text-3xl font-bold text-gray-900 mb-4">Video Doorbell</h3>
                         <p class="text-gray-800 mb-6">

@@ -16,7 +16,7 @@
     </div>
 
     <!-- Navigation -->
-    <livewire:navigation />
+   <livewire:partials.navigation />
 
     <!-- Main Content -->
     <main class="overflow-hidden">
@@ -24,7 +24,7 @@
     </main>
 
     <!-- Footer -->
-    <livewire:footer />
+    <livewire:partials.footer />
 
     @livewireScripts
 </body>

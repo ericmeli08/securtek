@@ -5,13 +5,7 @@
         <div class="absolute inset-0 z-0">
             <div id="hero-carousel" class="relative w-full h-full">
                 <div class="hero-image active absolute inset-0 bg-cover bg-center bg-no-repeat"
-                    style="background-image: url('https://images.pexels.com/photos/1146603/pexels-photo-1146603.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop');">
-                </div>
-                <div class="hero-image inactive absolute inset-0 bg-cover bg-center bg-no-repeat"
-                    style="background-image: url('https://images.pexels.com/photos/4483762/pexels-photo-4483762.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop');">
-                </div>
-                <div class="hero-image inactive absolute inset-0 bg-cover bg-center bg-no-repeat"
-                    style="background-image: url('https://images.pexels.com/photos/5439434/pexels-photo-5439434.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop');">
+                    style="background-image: url('{{ asset('images/about/hero.jpg') }}');">
                 </div>
             </div>
         </div>
@@ -185,7 +179,7 @@
                         <p class="text-blue-600 font-semibold mt-4">No exceptions.</p>
                     </div>
                     <div class="order-1 relative w-full h-full ">
-                        <img src="https://images.pexels.com/photos/4545946/pexels-photo-4545946.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                        <img src="{{ asset('images/about/24-7-monitoring.jpg') }}"
                             alt="24/7 Monitoring" class=" w-full object-cover h-full ">
                     </div>
                 </div>
@@ -197,7 +191,7 @@
             <div class="max-w-full mx-auto ">
                 <div class="grid min-h-[80vh]  grid-cols-1 lg:grid-cols-2">
                     <div>
-                        <img src="https://images.pexels.com/photos/5691659/pexels-photo-5691659.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                        <img src="{{asset('images/about/professional-installation.jpg')}}"
                             alt="Professional Installation" class=" w-full h-full  object-cover">
                     </div>
                     <div class="flex flex-col relative py-10 text-center justify-center items-center">
@@ -321,7 +315,7 @@
                         </p>
                     </div>
                     <div>
-                        <img src="https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                        <img src="{{ asset('images/about/support.jpg') }}"
                             alt="Support" class=" w-full h-full object-cover">
                     </div>
                 </div>
@@ -333,7 +327,7 @@
             <div class="">
                 <div class="grid grid-cols-1 lg:grid-cols-2 ">
                     <div class="  lg:order-1">
-                        <img src="https://images.pexels.com/photos/4545946/pexels-photo-4545946.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                        <img src="{{asset('images/about/history.jpg')}}"
                             alt="History" class=" w-full h-full object-cover">
                     </div>
                     <div class="order-1 flex flex-col py-10 items-center justify-center relative lg:py-10">
@@ -406,7 +400,4 @@
             </div>
         </section>
     </div>
-
-
-
 </div>
