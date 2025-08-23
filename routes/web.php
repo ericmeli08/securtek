@@ -14,6 +14,12 @@ use App\Livewire\About\OurTeamPage;
 use App\Livewire\About\PartnersPage;
 use App\Livewire\About\CareersPage;
 use App\Livewire\SupportPage;
+use App\Livewire\SupportPages;
+use Livewire\Livewire;
+use App\Livewire\ContactPage;
+use App\Livewire\SearchPage;
+use App\Livewire\BecomeDealerPage;
+use App\Livewire\About\DealerFinder;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -30,11 +36,11 @@ Route::get('/about', AboutPage::class)->name('about');
 Route::get('/about/our-team', OurTeamPage::class)->name('our-team');
 Route::get('/about/partners', PartnersPage::class)->name('partners');
 Route::get('/about/careers', CareersPage::class)->name('careers');
-Route::get('/about/find-dealer', \App\Livewire\About\DealerFinder::class)->name('find-dealer');
+Route::get('/about/find-dealer', DealerFinder::class)->name('find-dealer');
 Route::get('/support', SupportPage::class)->name('support');
-Route::get('/contact', \App\Livewire\ContactPage::class)->name('contact');
-Route::get('/search', \App\Livewire\SearchPage::class)->name('search');
-Route::get('/become-dealer', \App\Livewire\BecomeDealerPage::class)->name('become-dealer');
+Route::get('/contact', ContactPage::class)->name('contact');
+Route::get('/search', SearchPage::class)->name('search');
+Route::get('/become-dealer', BecomeDealerPage::class)->name('become-dealer');
 
 
 Route::view('dashboard', 'dashboard')
