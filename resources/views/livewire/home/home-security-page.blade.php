@@ -3,7 +3,7 @@
     <section class="hero-section relative  flex items-center ">
         <div class="relative min-h-[70vh] w-full">
             <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                style="background-image: url('https://images.pexels.com/photos/7640744/pexels-photo-7640744.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&fit=crop');">
+                style="background-image: url('{{ asset('images/home/home-security/hero.jpg') }}');">
             </div>
             <div style="clip-path: polygon(0 0, 50% 0, 25% 100%, 0 100%);"
                 class="absolute bottom-0 right-0 w-[100%] min-h-[100%] bg-white  ">
@@ -89,8 +89,8 @@
                     </ul>
                 </div>
                 <div class="space-y-3 mt-4">
-                    <button class="w-full btn-primary">CONTACT US</button>
-                    <button class="w-full btn-primary">SEE PACKAGES</button>
+                    <button class="w-full bg-accent-500 hover:bg-accent-600 hover:scale-105 btn-primary">CONTACT US</button>
+                    <button class="w-full bg-accent-500 hover:bg-accent-600 hover:scale-105 btn-primary">SEE PACKAGES</button>
                 </div>
             </div>
         </div>
@@ -103,7 +103,7 @@
             <div class="grid grid-cols-1 min-h-[70vh] relative md:grid-cols-3 gap-5">
                 <!-- Arm/Disarm -->
                 <div
-                    class="bg-white justify-center flex relative col-span-1 overflow-hidden bg-[url('https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=400&h=320&fit=crop')] ">
+                    class="bg-white justify-center flex relative col-span-1 bg-cover overflow-hidden bg-[url('{{ asset('images/home/home-security/arm-disarm.jpg') }}')] ">
                     <div class=" p-7 z-10 max-w-xs h-fit mt-5 flex flex-col  rounded-lg bg-gray-200/70 justify-center">
                         <h3 class="text-3xl font-bold text-gray-900 mb-4">Arm/Disarm</h3>
                         <p class="text-gray-800 mb-6">
@@ -117,7 +117,7 @@
 
                 <!-- Smart Thermostat -->
                 <div
-                    class="relative col-span-2 bg-cover overflow-hidden bg-[url('https://images.pexels.com/photos/7641825/pexels-photo-7641825.jpeg?auto=compress&cs=tinysrgb&w=400&h=320&fit=crop')] ">
+                    class="relative col-span-2 bg-cover overflow-hidden bg-[url('{{ asset('images/home/home-security/smart-thermostat.jpg') }}')] ">
                     <div class="p-7 m-5 max-w-2xl h-fit mt-5 flex flex-col rounded-lg bg-gray-200/70 justify-center">
                         <h3 class="text-3xl font-bold text-gray-900 mb-4">Smart Thermostat</h3>
                         <p class="text-gray-800 mb-6">

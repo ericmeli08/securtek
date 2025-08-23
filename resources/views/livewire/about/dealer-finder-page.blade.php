@@ -92,8 +92,8 @@
         @if (count($dealers) > 0)
             <div class="space-y-8">
                 <!-- Compteur de résultats -->
-                <div class="bg-primary-50 pl-32 rounded-lg shadow-sm min-w-[100vw] p-6">
-                    <h2 class="text-5xl font-bold text-primary-600 mb-2">Locations Near You</h2>
+                <div class="bg-primary-50  md:pl-32 rounded-lg shadow-sm min-w-[100vw] p-6">
+                    <h2 class="md:text-5xl text-4xl font-bold text-primary-600 mb-2">Locations Near You</h2>
                     <p class="text-gray-600">
                         Found {{ count(array_merge($dealers)) }}
                         dealer{{ count(array_merge($dealers)) !== 1 ? 's' : '' }}

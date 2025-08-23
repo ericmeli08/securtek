@@ -5,10 +5,10 @@
         <div class="absolute inset-0 z-0">
             <div id="hero-carousel" class="relative w-full h-full">
                 <div class="hero-image active absolute inset-0 bg-cover bg-center bg-no-repeat"
-                    style="background-image: url('https://images.pexels.com/photos/1146603/pexels-photo-1146603.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop');">
+                    style="background-image: url('{{ asset('images/home/hero1.jpg') }}');">
                 </div>
                 <div class="hero-image inactive absolute inset-0 bg-cover bg-center bg-no-repeat"
-                    style="background-image: url('https://images.pexels.com/photos/4483762/pexels-photo-4483762.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop');">
+                    style="background-image: url('{{ asset('images/home/hero2.jpg') }}');">
                 </div>
                 <div class="hero-image inactive absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style="background-image: url('https://images.pexels.com/photos/5439434/pexels-photo-5439434.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop');">
@@ -79,7 +79,7 @@
                     Simplify life!
                 </h1>
                 <p id="hero-subtitle"
-                    class="text-lg lg:text-3xl mb-8 transition-all duration-500  text-blue-100 animate-fade-in">
+                    class="text-lg sm:max-w-sm max-w-64  lg:text-3xl mb-8 transition-all duration-500  text-blue-100 animate-fade-in">
                     Security solutions & the latest technology
                 </p>
                 <button
@@ -141,7 +141,7 @@
                 </div>
             </div>
             <div class="relative min-h-[300px] lg:min-h-full">
-                <img src="https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                <img src="{{ asset('images/home/interactive-security.jpg') }}"
                      alt="Interactive Security" 
                      class="w-full h-full object-cover">
             </div>
@@ -152,7 +152,7 @@
     <section class="min-h-[60vh] lg:min-h-[80vh] bg-gray-50 overflow-hidden">
         <div class="grid grid-cols-1 lg:grid-cols-2 h-full">
             <div class="order-2 lg:order-1 relative min-h-[300px] lg:min-h-full">
-                <img src="https://images.pexels.com/photos/4386321/pexels-photo-4386321.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                <img src="{{ asset('images/home/smart-control.jpg') }}"
                      alt="Smart Control" 
                      class="w-full h-full object-cover">
             </div>
@@ -222,7 +222,7 @@
                 </div>
             </div>
             <div class="relative min-h-[300px] lg:min-h-full">
-                <img src="https://images.pexels.com/photos/7640744/pexels-photo-7640744.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                <img src="{{ asset('images/home/fire-safety.webp') }}"
                      alt="Fire Safety" 
                      class="w-full h-full object-cover">
             </div>
@@ -265,7 +265,7 @@
     <section class="min-h-[60vh] lg:min-h-[80vh] bg-white overflow-hidden">
         <div class="grid grid-cols-1 lg:grid-cols-2 h-full">
             <div class="order-2 lg:order-1 relative min-h-[300px] lg:min-h-full">
-                <img src="https://images.pexels.com/photos/4545946/pexels-photo-4545946.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                <img src="{{ asset('images/home/24-7-monitoring.jpg') }}"
                      alt="24/7 Monitoring" 
                      class="w-full h-full object-cover">
             </div>
@@ -305,12 +305,12 @@
         const images = document.querySelectorAll('.hero-image');
         const titles = [
             'Simplify life!',
-            'Protect your world.',
+            'Flexible Packages',
             'Smart home, smart you.'
         ];
         const subtitles = [
             'Security solutions & the latest technology',
-            'Your safety is our priority',
+            'Interactive Security, Home Automation and Cameras for one affordable price.',
             'Innovation meets comfort'
         ];
 
