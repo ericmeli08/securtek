@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\About;
 
 use Livewire\Component;
 
@@ -9,6 +9,6 @@ class CareersPage extends Component
     public $title = 'Careers - SecurTek';
     public function render()
     {
-        return view('livewire.careers-page')->layout('layouts.app');
+        return view('livewire.about.careers-page')->layout('layouts.app');
     }
 }

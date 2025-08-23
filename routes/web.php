@@ -1,18 +1,18 @@
 <?php
 
-use App\Livewire\BusinessPage;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
-use App\Livewire\HomePage;
-use App\Livewire\HomeSecurityPage;
-use App\Livewire\CamerasPage;
-use App\Livewire\PackagesPage;
-use App\Livewire\WarrantyPage;
-use App\Livewire\AboutPage;
-use App\Livewire\CertificationPage;
-use App\Livewire\OurTeamPage;
-use App\Livewire\PartnersPage;
-use App\Livewire\CareersPage;
+use App\Livewire\Home\HomePage;
+use App\Livewire\Home\HomeSecurityPage;
+use App\Livewire\Home\CamerasPage;
+use App\Livewire\Home\PackagesPage;
+use App\Livewire\Home\WarrantyPage;
+use App\Livewire\Business\BusinessPage;
+use App\Livewire\Business\CertificationPage;
+use App\Livewire\About\AboutPage;
+use App\Livewire\About\OurTeamPage;
+use App\Livewire\About\PartnersPage;
+use App\Livewire\About\CareersPage;
 use App\Livewire\SupportPage;
 
 // Route::get('/', function () {
@@ -20,16 +20,17 @@ use App\Livewire\SupportPage;
 // })->name('home');
 
 Route::get('/', HomePage::class)->name('home');
-Route::get('/home-security', HomeSecurityPage::class)->name('home-security');
-Route::get('/cameras', CamerasPage::class)->name('cameras');
-Route::get('/packages', PackagesPage::class)->name('packages');
-Route::get('/warranty', WarrantyPage::class)->name('warranty');
+Route::get('/home/home-security', HomeSecurityPage::class)->name('home-security');
+Route::get('/home/cameras', CamerasPage::class)->name('cameras');
+Route::get('/home/packages', PackagesPage::class)->name('packages');
+Route::get('/home/warranty', WarrantyPage::class)->name('warranty');
 Route::get('/business', BusinessPage::class)->name('business');
-Route::get('/certification', CertificationPage::class)->name('certification');
+Route::get('/business/certification', CertificationPage::class)->name('certification');
 Route::get('/about', AboutPage::class)->name('about');
-Route::get('/our-team', OurTeamPage::class)->name('our-team');
-Route::get('/partners', PartnersPage::class)->name('partners');
-Route::get('/careers', CareersPage::class)->name('careers');
+Route::get('/about/our-team', OurTeamPage::class)->name('our-team');
+Route::get('/about/partners', PartnersPage::class)->name('partners');
+Route::get('/about/careers', CareersPage::class)->name('careers');
+Route::get('/about/find-dealer', \App\Livewire\About\DealerFinder::class)->name('find-dealer');
 Route::get('/support', SupportPage::class)->name('support');
 Route::get('/contact', \App\Livewire\ContactPage::class)->name('contact');
 Route::get('/search', \App\Livewire\SearchPage::class)->name('search');

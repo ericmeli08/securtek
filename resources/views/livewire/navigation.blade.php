@@ -1,7 +1,7 @@
 <style>
 
     /* Dropdown desktop styles */
-   
+
 </style>
 
 <nav class="bg-white shadow-lg relative">
@@ -23,7 +23,7 @@
                     <!-- Home -->
                     <div class="relative dropdown">
                         <a href="{{ route('home') }}"
-                            class="text-gray-700 hover:text-securtek-blue transition-colors duration-300 flex items-center {{ request()->routeIs('home*') ? 'text-securtek-blue font-semibold' : '' }}">
+                            class="text-gray-700 hover:text-securtek-blue/80 transition-colors duration-300 flex items-center {{ request()->routeIs('home*') ? 'text-securtek-blue/90 font-semibold' : '' }}">
                             Home
                             <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -53,7 +53,7 @@
                     <!-- Business -->
                     <div class="relative dropdown">
                         <a href="{{ route('business') }}"
-                            class="text-gray-700 hover:text-securtek-blue transition-colors duration-300 flex items-center {{ request()->routeIs('business*') ? 'text-securtek-blue font-semibold' : '' }}">
+                            class="text-gray-700 hover:text-securtek-blue/80 transition-colors duration-300 flex items-center {{ request()->routeIs('business*') ? 'text-securtek-blue/90 font-semibold' : '' }}">
                             Business
                             <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -75,7 +75,7 @@
                     <!-- About -->
                     <div class="relative dropdown">
                         <a href="{{ route('about') }}"
-                            class="text-gray-700 hover:text-securtek-blue transition-colors duration-300 flex items-center {{ request()->routeIs('about*') ? 'text-securtek-blue font-semibold' : '' }}">
+                            class="text-gray-700 hover:text-securtek-blue/80 transition-colors duration-300 flex items-center {{ request()->routeIs('about*') ? 'text-securtek-blue/90 font-semibold' : '' }}">
                             About
                             <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -95,17 +95,17 @@
                                 class="block px-4 py-2 text-white hover:bg-primary-800 transition-colors">
                                 Careers
                             </a>
-                            <a href="{{ route('support') }}"
+                            <a href="{{ route('find-dealer') }}"
                                 class="block px-4 py-2 text-white hover:bg-primary-800 transition-colors">
-                                Support
+                                Find a Dealer
                             </a>
                         </div>
                     </div>
 
                     <a href="{{ route('support') }}"
-                        class="text-gray-700 hover:text-securtek-blue transition-colors duration-300 {{ request()->routeIs('support') ? 'text-securtek-blue font-semibold' : '' }}">Support</a>
+                        class="text-gray-700 hover:text-securtek-blue/80 transition-colors duration-300 {{ request()->routeIs('support') ? 'text-securtek-blue/90 font-semibold' : '' }}">Support</a>
                     <a href="{{ route('contact') }}"
-                        class="text-gray-700 flex items-center hover:text-securtek-blue transition-colors duration-300 {{ request()->routeIs('contact') ? 'text-securtek-blue font-semibold' : '' }}">
+                        class="text-gray-700 flex items-center hover:text-securtek-blue/80 transition-colors duration-300 {{ request()->routeIs('contact') ? 'text-securtek-blue/90 font-semibold' : '' }}">
                         Contact
                     </a>
                     <a href="{{ route('search') }}" class="pl-5">
@@ -126,7 +126,7 @@
 
             <!-- Mobile menu button -->
             <div class="md:hidden">
-                <button type="button" id="mobile-menu-button" class="text-gray-700 hover:text-securtek-blue focus:outline-none transition-colors duration-200">
+                <button type="button" id="mobile-menu-button" class="text-gray-700 hover:text-securtek-blue/80 focus:outline-none transition-colors duration-200">
                     <svg id="menu-icon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
@@ -158,27 +158,27 @@
                 <div class="relative">
                     <div class="flex items-center justify-between">
                         <a href="{{ route('home') }}"
-                            class="block py-3 text-gray-700 hover:text-securtek-blue transition-colors duration-200 flex-1 {{ request()->routeIs('home*') ? 'text-securtek-blue font-semibold' : '' }}">
+                            class="block py-3 text-gray-700 hover:text-securtek-blue/80 transition-colors duration-200 flex-1 {{ request()->routeIs('home*') ? 'text-securtek-blue/90 font-semibold' : '' }}">
                             Home
                         </a>
                         <button onclick="toggleMobileSubmenu('home-submenu', 'home-chevron')"
-                                class="p-2 text-gray-700 hover:text-securtek-blue transition-colors duration-200">
+                                class="p-2 text-gray-700 hover:text-securtek-blue/80 transition-colors duration-200">
                             <svg id="home-chevron" class="w-4 h-4 chevron-rotate" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
                     </div>
                     <div id="home-submenu" class="mobile-submenu">
-                        <a href="{{ route('home-security') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue transition-colors duration-200">
+                        <a href="{{ route('home-security') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
                             Home Security
                         </a>
-                        <a href="{{ route('cameras') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue transition-colors duration-200">
+                        <a href="{{ route('cameras') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
                             Cameras
                         </a>
-                        <a href="{{ route('packages') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue transition-colors duration-200">
+                        <a href="{{ route('packages') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
                             Packages
                         </a>
-                        <a href="{{ route('warranty') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue transition-colors duration-200">
+                        <a href="{{ route('warranty') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
                             Warranty
                         </a>
                     </div>
@@ -188,21 +188,21 @@
                 <div class="relative">
                     <div class="flex items-center justify-between">
                         <a href="{{ route('business') }}"
-                            class="block py-3 text-gray-700 hover:text-securtek-blue transition-colors duration-200 flex-1 {{ request()->routeIs('business*') ? 'text-securtek-blue font-semibold' : '' }}">
+                            class="block py-3 text-gray-700 hover:text-securtek-blue/80 transition-colors duration-200 flex-1 {{ request()->routeIs('business*') ? 'text-securtek-blue/90 font-semibold' : '' }}">
                             Business
                         </a>
                         <button onclick="toggleMobileSubmenu('business-submenu', 'business-chevron')"
-                                class="p-2 text-gray-700 hover:text-securtek-blue transition-colors duration-200">
+                                class="p-2 text-gray-700 hover:text-securtek-blue/80 transition-colors duration-200">
                             <svg id="business-chevron" class="w-4 h-4 chevron-rotate" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
                     </div>
                     <div id="business-submenu" class="mobile-submenu">
-                        <a href="{{ route('certification') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue transition-colors duration-200">
+                        <a href="{{ route('certification') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
                             ULC Certification
                         </a>
-                        <a href="{{ route('warranty') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue transition-colors duration-200">
+                        <a href="{{ route('warranty') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
                             Warranty
                         </a>
                     </div>
@@ -212,46 +212,46 @@
                 <div class="relative">
                     <div class="flex items-center justify-between">
                         <a href="{{ route('about') }}"
-                            class="block py-3 text-gray-700 hover:text-securtek-blue transition-colors duration-200 flex-1 {{ request()->routeIs('about*') ? 'text-securtek-blue font-semibold' : '' }}">
+                            class="block py-3 text-gray-700 hover:text-securtek-blue/80 transition-colors duration-200 flex-1 {{ request()->routeIs('about*') ? 'text-securtek-blue/90 font-semibold' : '' }}">
                             About
                         </a>
                         <button onclick="toggleMobileSubmenu('about-submenu', 'about-chevron')"
-                                class="p-2 text-gray-700 hover:text-securtek-blue transition-colors duration-200">
+                                class="p-2 text-gray-700 hover:text-securtek-blue/80 transition-colors duration-200">
                             <svg id="about-chevron" class="w-4 h-4 chevron-rotate" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
                     </div>
                     <div id="about-submenu" class="mobile-submenu">
-                        <a href="{{ route('our-team') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue transition-colors duration-200">
+                        <a href="{{ route('our-team') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
                             Our Team
                         </a>
-                        <a href="{{ route('partners') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue transition-colors duration-200">
+                        <a href="{{ route('partners') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
                             Partners and Affiliations
                         </a>
-                        <a href="{{ route('careers') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue transition-colors duration-200">
+                        <a href="{{ route('careers') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
                             Careers
                         </a>
-                        <a href="{{ route('support') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue transition-colors duration-200">
-                            Support
+                        <a href="{{ route('find-dealer') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
+                            Find a Dealer
                         </a>
                     </div>
                 </div>
 
                 <!-- Support Mobile -->
                 <a href="{{ route('support') }}"
-                    class="block py-3 text-gray-700 hover:text-securtek-blue transition-colors duration-200 {{ request()->routeIs('support') ? 'text-securtek-blue font-semibold' : '' }}">
+                    class="block py-3 text-gray-700 hover:text-securtek-blue/80 transition-colors duration-200 {{ request()->routeIs('support') ? 'text-securtek-blue/90 font-semibold' : '' }}">
                     Support
                 </a>
 
                 <!-- Contact Mobile -->
                 <a href="{{ route('contact') }}"
-                    class="block py-3 text-gray-700 hover:text-securtek-blue transition-colors duration-200 {{ request()->routeIs('contact') ? 'text-securtek-blue font-semibold' : '' }}">
+                    class="block py-3 text-gray-700 hover:text-securtek-blue/80 transition-colors duration-200 {{ request()->routeIs('contact') ? 'text-securtek-blue/90 font-semibold' : '' }}">
                     Contact
                 </a>
 
                 <!-- Search Mobile -->
-                <a href="{{ route('search') }}" class="block py-3 text-gray-700 hover:text-securtek-blue transition-colors duration-200">
+                <a href="{{ route('search') }}" class="block py-3 text-gray-700 hover:text-securtek-blue/80 transition-colors duration-200">
                     <svg class="w-6 h-6 text-securtek-blue inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                     </svg>

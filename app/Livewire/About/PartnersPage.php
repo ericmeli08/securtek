@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\About;
 
 use Livewire\Component;
 
@@ -9,6 +9,6 @@ class PartnersPage extends Component
     public $title = 'Partners - SecurTek';
     public function render()
     {
-        return view('livewire.partners-page')->layout('layouts.app');
+        return view('livewire.about.partners-page')->layout('layouts.app');
     }
 }

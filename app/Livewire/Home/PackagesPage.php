@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\Home;
 
 use Livewire\Component;
 
@@ -10,6 +10,6 @@ class PackagesPage extends Component
 
     public function render()
     {
-        return view('livewire.packages-page')->layout('layouts.app');
+        return view('livewire.home.packages-page')->layout('layouts.app');
     }
 }

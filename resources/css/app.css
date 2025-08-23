@@ -73,6 +73,56 @@
   }
 }
 
+@theme {
+  /* === Couleurs personnalisées === */
+  --color-secondary-50: #f8fafc;
+  --color-secondary-100: #f1f5f9;
+  --color-secondary-200: #e2e8f0;
+  --color-secondary-300: #cbd5e1;
+  --color-secondary-400: #94a3b8;
+  --color-secondary-500: #64748b;
+  --color-secondary-600: #475569;
+  --color-secondary-700: #334155;
+  --color-secondary-800: #1e293b;
+  --color-secondary-900: #0f172a;
+
+  --color-accent-50: #fff7ed;
+  --color-accent-100: #ffedd5;
+  --color-accent-200: #fed7aa;
+  --color-accent-300: #fdba74;
+  --color-accent-400: #fb923c;
+  --color-accent-500: #f97316;
+  --color-accent-600: #ea580c;
+  --color-accent-700: #c2410c;
+  --color-accent-800: #9a3412;
+  --color-accent-900: #7c2d12;
+
+  /* === Spacing personnalisés === */
+  --size-18: 4.5rem;
+  --size-88: 22rem;
+
+  /* === Animations personnalisées === */
+  --animate-fade-in: fadeIn 0.5s ease-in-out;
+  --animate-slide-up: slideUp 0.3s ease-out;
+  --animate-pulse-slow: pulse 3s infinite;
+
+  /* === Définition des keyframes === */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    0% { transform: translateY(10px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+}
+
 @layer theme {
     .dark {
         --color-accent: var(--color-white);
@@ -138,6 +188,14 @@ select:focus[data-flux-control] {
   .btn-secondary {
     @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-white text-primary-600 border border-primary-600 hover:bg-primary-600 hover:text-white focus:ring-primary-500;
   }
+
+      .form-input {
+        @apply w-full px-3 py-2 bg-white text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-300;
+    }
+
+    .form-select {
+        @apply w-full px-3 py-2 bg-white text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-300;
+    }
 
   .hero-image {
     transition: opacity 1s ease-in-out;
@@ -230,4 +288,56 @@ select:focus[data-flux-control] {
         opacity: 1;
         visibility: visible;
     }
+
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Leaflet custom styles */
+.leaflet-popup-content-wrapper {
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.leaflet-popup-content {
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Loading animation */
+.loading-spinner {
+    border: 2px solid #f3f4f6;
+    border-top: 2px solid #2563eb;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+    .leaflet-container {
+        height: 300px;
+    }
+}
 }

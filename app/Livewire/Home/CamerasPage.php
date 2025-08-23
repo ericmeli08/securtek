@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\Home;
 
 use Livewire\Component;
 
@@ -10,6 +10,6 @@ class CamerasPage extends Component
 
     public function render()
     {
-        return view('livewire.cameras-page')->layout('layouts.app');
+        return view('livewire.home.cameras-page')->layout('layouts.app');
     }
 }

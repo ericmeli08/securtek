@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\Home;
 
 use Livewire\Component;
 
@@ -10,6 +10,6 @@ class HomeSecurityPage extends Component
 
     public function render()
     {
-        return view('livewire.home-security-page')->layout('layouts.app');
+        return view('livewire.home.home-security-page')->layout('layouts.app');
     }
 }

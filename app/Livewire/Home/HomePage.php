@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\Home;
 
 use Livewire\Component;
 
@@ -9,7 +9,7 @@ class HomePage extends Component
     public $title = 'SecurTek - Safe. Secure. 24/7';
 
     public $currentSlide = 0;
-    
+
     public $slides = [
         [
             'image' => 'https://images.pexels.com/photos/1146603/pexels-photo-1146603.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
@@ -40,6 +40,6 @@ class HomePage extends Component
 
     public function render()
     {
-        return view('livewire.home-page')->layout('layouts.app');
+        return view('livewire.home.home-page')->layout('layouts.app');
     }
 }
