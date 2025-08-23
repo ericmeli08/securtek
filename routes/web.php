@@ -21,27 +21,32 @@ use App\Livewire\SearchPage;
 use App\Livewire\BecomeDealerPage;
 use App\Livewire\About\DealerFinder;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// })->name('home');
 
-Route::get('/', HomePage::class)->name('home');
-Route::get('/home/home-security', HomeSecurityPage::class)->name('home-security');
-Route::get('/home/cameras', CamerasPage::class)->name('cameras');
-Route::get('/home/packages', PackagesPage::class)->name('packages');
-Route::get('/home/warranty', WarrantyPage::class)->name('warranty');
-Route::get('/business', BusinessPage::class)->name('business');
-Route::get('/business/certification', CertificationPage::class)->name('certification');
-Route::get('/about', AboutPage::class)->name('about');
-Route::get('/about/our-team', OurTeamPage::class)->name('our-team');
-Route::get('/about/partners', PartnersPage::class)->name('partners');
-Route::get('/about/careers', CareersPage::class)->name('careers');
-Route::get('/about/find-dealer', DealerFinder::class)->name('find-dealer');
+Route::prefix('/home')->group(  function () {
+    Route::get('/', HomePage::class)->name('home');
+    Route::get('/home-security', HomeSecurityPage::class)->name('home-security');
+    Route::get('/cameras', CamerasPage::class)->name('cameras');
+    Route::get('/packages', PackagesPage::class)->name('packages');
+    Route::get('/warranty', WarrantyPage::class)->name('warranty');
+});
+
+Route::prefix('/business')->group( function () {
+    Route::get('/', BusinessPage::class)->name('business');
+    Route::get('/certification', CertificationPage::class)->name('certification');
+});
+
+Route::prefix('/about')->group( function () {
+    Route::get('/', AboutPage::class)->name('about');
+    Route::get('/our-team', OurTeamPage::class)->name('our-team');
+    Route::get('/partners', PartnersPage::class)->name('partners');
+    Route::get('/careers', CareersPage::class)->name('careers');
+    Route::get('/find-dealer', DealerFinder::class)->name('find-dealer');
+});
+
 Route::get('/support', SupportPage::class)->name('support');
 Route::get('/contact', ContactPage::class)->name('contact');
 Route::get('/search', SearchPage::class)->name('search');
 Route::get('/become-dealer', BecomeDealerPage::class)->name('become-dealer');
-
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

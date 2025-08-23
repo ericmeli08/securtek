@@ -10,8 +10,6 @@
 
             </div>
         </div>
-        {{-- <img class="absolute   w-[200vw] min-h-[100%] object-cover  lg:min-h-[1000%]" src="{{ asset('images/slide-triangle-overlay.svg') }}"
-            alt=""> --}}
 
         <div class="absolute top-0 left-0 w-full h-full ">
             <div class="w-full  h-full relative">
