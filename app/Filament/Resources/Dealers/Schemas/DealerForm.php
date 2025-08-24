@@ -13,100 +13,101 @@ class DealerForm
     {
        return $schema
     ->components([
-        // Informations générales
-        Section::make('Informations générales')
-            ->description('Détails de base du dealer')
-            ->icon('heroicon-m-information-circle')
-            ->columns(2)
-            ->schema([
-                TextInput::make('name')
-                    ->label('Nom du dealer')
-                    ->placeholder('Ex: Garage ABC')
-                    ->required(),
+    // General Information
+    Section::make('General Information')
+        ->description('Basic details of the dealer')
+        ->icon('heroicon-m-information-circle')
+        ->columns(2)
+        ->schema([
+            TextInput::make('name')
+                ->label('Dealer Name')
+                ->placeholder('Ex: ABC Garage')
+                ->required(),
 
-                TextInput::make('website')
-                    ->label('Site web')
-                    ->placeholder('https://example.com')
-                    ->url()
-                    ->suffixIcon('heroicon-m-globe-alt'),
-            ]),
+            TextInput::make('website')
+                ->label('Website')
+                ->placeholder('https://example.com')
+                ->url()
+                ->suffixIcon('heroicon-m-globe-alt'),
+        ]),
 
-        // Adresse
-        Section::make('Adresse')
-            ->description('Localisation physique du dealer')
-            ->icon('heroicon-m-map-pin')
-            ->columns(2)
-            ->schema([
-                TextInput::make('address')
-                    ->label('Adresse')
-                    ->placeholder('123 Rue Principale')
-                    ->required(),
+    // Address
+    Section::make('Address')
+        ->description('Physical location of the dealer')
+        ->icon('heroicon-m-map-pin')
+        ->columns(2)
+        ->schema([
+            TextInput::make('address')
+                ->label('Address')
+                ->placeholder('123 Main Street')
+                ->required(),
 
-                TextInput::make('city')
-                    ->label('Ville')
-                    ->required(),
+            TextInput::make('city')
+                ->label('City')
+                ->required(),
 
-                TextInput::make('province')
-                    ->label('Province / État')
-                    ->required(),
+            TextInput::make('province')
+                ->label('Province / State')
+                ->required(),
 
-                TextInput::make('country')
-                    ->label('Pays')
-                    ->default('Canada')
-                    ->required(),
+            TextInput::make('country')
+                ->label('Country')
+                ->default('Canada')
+                ->required(),
 
-                TextInput::make('postal_code')
-                    ->label('Code postal')
-                    ->placeholder('H2X 1Y4')
-                    ->required(),
-            ]),
+            TextInput::make('postal_code')
+                ->label('Postal Code')
+                ->placeholder('H2X 1Y4')
+                ->required(),
+        ]),
 
-        // Contact
-        Section::make('Contact')
-            ->description('Coordonnées de contact')
-            ->icon('heroicon-m-phone')
-            ->columns(2)
-            ->schema([
-                TextInput::make('phone')
-                    ->label('Téléphone')
-                    ->placeholder('+1 514-555-1234')
-                    ->tel()
-                    ->required()
-                    ->suffixIcon('heroicon-m-phone'),
+    // Contact
+    Section::make('Contact')
+        ->description('Contact details')
+        ->icon('heroicon-m-phone')
+        ->columns(2)
+        ->schema([
+            TextInput::make('phone')
+                ->label('Phone')
+                ->placeholder('+1 514-555-1234')
+                ->tel()
+                ->required()
+                ->suffixIcon('heroicon-m-phone'),
 
-                TextInput::make('email')
-                    ->label('Adresse email')
-                    ->placeholder('contact@example.com')
-                    ->email()
-                    ->suffixIcon('heroicon-m-envelope'),
-            ]),
+            TextInput::make('email')
+                ->label('Email Address')
+                ->placeholder('contact@example.com')
+                ->email()
+                ->suffixIcon('heroicon-m-envelope'),
+        ]),
 
-        // Localisation GPS
-        Section::make('Localisation GPS')
-            ->description('Coordonnées pour Google Maps')
-            ->columns(2)
-            ->icon('heroicon-m-map')
-            ->schema([
-                TextInput::make('latitude')
-                    ->label('Latitude')
-                    ->numeric()
-                    ->step(0.000001)
-                    ->placeholder('45.5017')
-                    ->required(),
+    // GPS Location
+    Section::make('GPS Location')
+        ->description('Coordinates for Google Maps')
+        ->columns(2)
+        ->icon('heroicon-m-map')
+        ->schema([
+            TextInput::make('latitude')
+                ->label('Latitude')
+                ->numeric()
+                ->step(0.000001)
+                ->placeholder('45.5017')
+                ->required(),
 
-                TextInput::make('longitude')
-                    ->label('Longitude')
-                    ->numeric()
-                    ->step(0.000001)
-                    ->placeholder('-73.5673')
-                    ->required(),
-            ]),
+            TextInput::make('longitude')
+                ->label('Longitude')
+                ->numeric()
+                ->step(0.000001)
+                ->placeholder('-73.5673')
+                ->required(),
+        ]),
 
-        // Statut
-        Toggle::make('is_active')
-            ->label('Actif ?')
-            ->helperText('Décochez pour désactiver ce dealer')
-            ->default(true),
-    ]);
+    // Status
+    Toggle::make('is_active')
+        ->label('Active?')
+        ->helperText('Uncheck to deactivate this dealer')
+        ->default(true),
+]);
+
 }
 }

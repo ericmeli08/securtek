@@ -127,7 +127,7 @@ class DatabaseSeeder extends Seeder
                 'longitude' => -79.3957,
             ],
             [
-                'name' => 'Équipe Technologies Ltée',
+                'name' => 'Team NTECH SERVICES',
                 'address' => '1000 Rue Sherbrooke Est',
                 'city' => 'Montreal',
                 'province' => 'Quebec',
