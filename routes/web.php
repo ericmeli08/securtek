@@ -21,23 +21,22 @@ use App\Livewire\SearchPage;
 use App\Livewire\BecomeDealerPage;
 use App\Livewire\About\DealerFinder;
 
-Route::get('/', HomePage::class)->name('home');
 
-Route::prefix('/home')->group(  function () {
-    Route::get('/', HomePage::class)->name('home');
+Route::prefix('/home')->name('home.')->group(  function () {
+    Route::get('/', HomePage::class)->name('index');
     Route::get('/home-security', HomeSecurityPage::class)->name('home-security');
     Route::get('/cameras', CamerasPage::class)->name('cameras');
     Route::get('/packages', PackagesPage::class)->name('packages');
     Route::get('/warranty', WarrantyPage::class)->name('warranty');
 });
 
-Route::prefix('/business')->group( function () {
-    Route::get('/', BusinessPage::class)->name('business');
+Route::prefix('/business')->name('business.')->group( function () {
+    Route::get('/', BusinessPage::class)->name('index');
     Route::get('/certification', CertificationPage::class)->name('certification');
 });
 
-Route::prefix('/about')->group( function () {
-    Route::get('/', AboutPage::class)->name('about');
+Route::prefix('/about')->name('about.')->group( function () {
+    Route::get('/', AboutPage::class)->name('index');
     Route::get('/our-team', OurTeamPage::class)->name('our-team');
     Route::get('/partners', PartnersPage::class)->name('partners');
     Route::get('/careers', CareersPage::class)->name('careers');

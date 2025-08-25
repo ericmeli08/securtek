@@ -9,7 +9,7 @@
         <div class="flex justify-between items-center py-4">
             <!-- Logo -->
             <div class="flex items-center">
-                <a href="{{ route('home') }}" class="flex items-center">
+                <a href="{{ route('home.index') }}" class="flex items-center">
                     <div class="text-3xl md:text-5xl italic font-bold text-securtek-blue">
                         SecurTek
                         <span class="text-xs text-center font-normal text-gray-900 block">SAFE. SECURE. 24/7</span>
@@ -22,7 +22,7 @@
                 <div class="hidden md:flex items-center space-x-8">
                     <!-- Home -->
                     <div class="relative dropdown">
-                        <a href="{{ route('home') }}"
+                        <a href="{{ route('home.index') }}"
                             class="text-gray-700 hover:text-securtek-blue/80 transition-colors duration-300 flex items-center {{ request()->routeIs('home*') ? 'text-securtek-blue/90 font-semibold' : '' }}">
                             Home
                             <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -31,19 +31,19 @@
                             </svg>
                         </a>
                         <div class="dropdown-menu w-[250px] bg-primary-500 rounded-[0px] border-t-4 border-t-primary-800 text-white">
-                            <a href="{{ route('home-security') }}"
+                            <a href="{{ route('home.home-security') }}"
                                 class="block px-4 py-2 text-white hover:bg-primary-800 transition-colors">
                                 Home Security
                             </a>
-                            <a href="{{ route('cameras') }}"
+                            <a href="{{ route('home.cameras') }}"
                                 class="block px-4 py-2 text-white hover:bg-primary-800 transition-colors">
                                 Cameras
                             </a>
-                            <a href="{{ route('packages') }}"
+                            <a href="{{ route('home.packages') }}"
                                 class="block px-4 py-2 text-white hover:bg-primary-800 transition-colors">
                                 Packages
                             </a>
-                            <a href="{{ route('warranty') }}"
+                            <a href="{{ route('home.warranty') }}"
                                 class="block px-4 py-2 text-white hover:bg-primary-800 transition-colors">
                                 Warranty
                             </a>
@@ -52,7 +52,7 @@
 
                     <!-- Business -->
                     <div class="relative dropdown">
-                        <a href="{{ route('business') }}"
+                        <a href="{{ route('business.index') }}"
                             class="text-gray-700 hover:text-securtek-blue/80 transition-colors duration-300 flex items-center {{ request()->routeIs('business*') ? 'text-securtek-blue/90 font-semibold' : '' }}">
                             Business
                             <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -61,11 +61,11 @@
                             </svg>
                         </a>
                         <div class="dropdown-menu w-[250px] bg-primary-500 rounded-[0px] border-t-4 border-t-primary-800 text-white">
-                            <a href="{{ route('certification') }}"
+                            <a href="{{ route('business.certification') }}"
                                 class="block px-4 py-2 text-white hover:bg-primary-800 transition-colors">
                                 ULC Certification
                             </a>
-                            <a href="{{ route('warranty') }}"
+                            <a href="{{ route('home.warranty') }}"
                                 class="block px-4 py-2 text-white hover:bg-primary-800 transition-colors">
                                 Warranty
                             </a>
@@ -74,7 +74,7 @@
 
                     <!-- About -->
                     <div class="relative dropdown">
-                        <a href="{{ route('about') }}"
+                        <a href="{{ route('about.index') }}"
                             class="text-gray-700 hover:text-securtek-blue/80 transition-colors duration-300 flex items-center {{ request()->routeIs('about*') ? 'text-securtek-blue/90 font-semibold' : '' }}">
                             About
                             <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -83,19 +83,19 @@
                             </svg>
                         </a>
                         <div class="dropdown-menu w-[250px] bg-primary-500 rounded-[0px] border-t-4 border-t-primary-800 text-white">
-                            <a href="{{ route('our-team') }}"
+                            <a href="{{ route('about.our-team') }}"
                                 class="block px-4 py-2 text-white hover:bg-primary-800 transition-colors">
                                 Our Team
                             </a>
-                            <a href="{{ route('partners') }}"
+                            <a href="{{ route('about.partners') }}"
                                 class="block px-4 py-2 text-white hover:bg-primary-800 transition-colors">
                                 Partners and Affiliations
                             </a>
-                            <a href="{{ route('careers') }}"
+                            <a href="{{ route('about.careers') }}"
                                 class="block px-4 py-2 text-white hover:bg-primary-800 transition-colors">
                                 Careers
                             </a>
-                            <a href="{{ route('find-dealer') }}"
+                            <a href="{{ route('about.find-dealer') }}"
                                 class="block px-4 py-2 text-white hover:bg-primary-800 transition-colors">
                                 Find a Dealer
                             </a>
@@ -157,7 +157,7 @@
                 <!-- Home Mobile -->
                 <div class="relative">
                     <div class="flex items-center justify-between">
-                        <a href="{{ route('home') }}"
+                        <a href="{{ route('home.index') }}"
                             class="block py-3 text-gray-700 hover:text-securtek-blue/80 transition-colors duration-200 flex-1 {{ request()->routeIs('home*') ? 'text-securtek-blue/90 font-semibold' : '' }}">
                             Home
                         </a>
@@ -169,16 +169,16 @@
                         </button>
                     </div>
                     <div id="home-submenu" class="mobile-submenu">
-                        <a href="{{ route('home-security') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
+                        <a href="{{ route('home.home-security') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
                             Home Security
                         </a>
-                        <a href="{{ route('cameras') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
+                        <a href="{{ route('home.cameras') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
                             Cameras
                         </a>
-                        <a href="{{ route('packages') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
+                        <a href="{{ route('home.packages') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
                             Packages
                         </a>
-                        <a href="{{ route('warranty') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
+                        <a href="{{ route('home.warranty') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
                             Warranty
                         </a>
                     </div>
@@ -187,7 +187,7 @@
                 <!-- Business Mobile -->
                 <div class="relative">
                     <div class="flex items-center justify-between">
-                        <a href="{{ route('business') }}"
+                        <a href="{{ route('business.index') }}"
                             class="block py-3 text-gray-700 hover:text-securtek-blue/80 transition-colors duration-200 flex-1 {{ request()->routeIs('business*') ? 'text-securtek-blue/90 font-semibold' : '' }}">
                             Business
                         </a>
@@ -199,10 +199,10 @@
                         </button>
                     </div>
                     <div id="business-submenu" class="mobile-submenu">
-                        <a href="{{ route('certification') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
+                        <a href="{{ route('business.certification') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
                             ULC Certification
                         </a>
-                        <a href="{{ route('warranty') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
+                        <a href="{{ route('home.warranty') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
                             Warranty
                         </a>
                     </div>
@@ -211,7 +211,7 @@
                 <!-- About Mobile -->
                 <div class="relative">
                     <div class="flex items-center justify-between">
-                        <a href="{{ route('about') }}"
+                        <a href="{{ route('about.index') }}"
                             class="block py-3 text-gray-700 hover:text-securtek-blue/80 transition-colors duration-200 flex-1 {{ request()->routeIs('about*') ? 'text-securtek-blue/90 font-semibold' : '' }}">
                             About
                         </a>
@@ -223,16 +223,16 @@
                         </button>
                     </div>
                     <div id="about-submenu" class="mobile-submenu">
-                        <a href="{{ route('our-team') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
+                        <a href="{{ route('about.our-team') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
                             Our Team
                         </a>
-                        <a href="{{ route('partners') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
+                        <a href="{{ route('about.partners') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
                             Partners and Affiliations
                         </a>
-                        <a href="{{ route('careers') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
+                        <a href="{{ route('about.careers') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
                             Careers
                         </a>
-                        <a href="{{ route('find-dealer') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
+                        <a href="{{ route('about.find-dealer') }}" class="block py-2 pl-4 text-gray-600 hover:text-securtek-blue/80 transition-colors duration-200">
                             Find a Dealer
                         </a>
                     </div>
