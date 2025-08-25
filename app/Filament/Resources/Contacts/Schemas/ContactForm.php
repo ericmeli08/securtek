@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\Contacts\Schemas;
 
+use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
 use Filament\Schemas\Schema;
@@ -21,6 +22,7 @@ class ContactForm
                 Textarea::make('message')
                     ->required()
                     ->columnSpanFull(),
+                DateTimePicker::make('read_at'),
             ]);
     }
 }

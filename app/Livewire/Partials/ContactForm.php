@@ -2,7 +2,6 @@
 
 namespace App\Livewire\Partials;
 
-use App\Jobs\SendContactMail;
 use App\Models\Contact;
 use Livewire\Component;
 
@@ -25,8 +24,6 @@ class ContactForm extends Component
             'email' => $this->email,
             'message' => $this->message,
         ]);
-
-        SendContactMail::dispatch($contact);
 
         session()->flash('message', 'Merci ! Votre message a bien été envoyé.');
         $this->reset('name', 'email', 'message');

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Resources\Contacts\Tables;
+namespace App\Filament\Resources\ContactResponses\Tables;
 
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
@@ -9,16 +9,13 @@ use Filament\Actions\ViewAction;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 
-class ContactsTable
+class ContactResponsesTable
 {
     public static function configure(Table $table): Table
     {
         return $table
             ->columns([
-                TextColumn::make('name')
-                    ->searchable(),
-                TextColumn::make('email')
-                    ->label('Email address')
+                TextColumn::make('contact.name')
                     ->searchable(),
                 TextColumn::make('created_at')
                     ->dateTime()
@@ -28,9 +25,6 @@ class ContactsTable
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
-                TextColumn::make('read_at')
-                    ->dateTime()
-                    ->sortable(),
             ])
             ->filters([
                 //

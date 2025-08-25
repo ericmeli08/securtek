@@ -1,24 +1,20 @@
 <?php
 
-namespace App\Filament\Resources\Contacts\Schemas;
+namespace App\Filament\Resources\ContactResponses\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Schema;
 
-class ContactInfolist
+class ContactResponseInfolist
 {
     public static function configure(Schema $schema): Schema
     {
         return $schema
             ->components([
-                TextEntry::make('name'),
-                TextEntry::make('email')
-                    ->label('Email address'),
+                TextEntry::make('contact.name'),
                 TextEntry::make('created_at')
                     ->dateTime(),
                 TextEntry::make('updated_at')
-                    ->dateTime(),
-                TextEntry::make('read_at')
                     ->dateTime(),
             ]);
     }
