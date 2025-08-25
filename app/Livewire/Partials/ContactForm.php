@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Partials;
 
 use Livewire\Component;
 use App\Models\Contact;
@@ -35,7 +35,7 @@ class ContactForm extends Component
 
     public function render()
     {
-        return view('livewire.contact-form');
+        return view('livewire.partials.contact-form');
     }
 }
 
