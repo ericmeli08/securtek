@@ -12,7 +12,9 @@ return new class extends Migration {
     {
         Schema::create('contact_responses', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained()->nullOnDelete();
             $table->foreignId('contact_id')->constrained()->cascadeOnDelete();
+            $table->string('subject');
             $table->text('content');
             $table->timestamps();
         });
