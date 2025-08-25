@@ -21,6 +21,7 @@ use App\Livewire\SearchPage;
 use App\Livewire\BecomeDealerPage;
 use App\Livewire\About\DealerFinder;
 
+Route::get('/', HomePage::class)->name('home');
 
 Route::prefix('/home')->group(  function () {
     Route::get('/', HomePage::class)->name('home');
