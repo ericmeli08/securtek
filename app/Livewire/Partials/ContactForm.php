@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Livewire\Partials;
+namespace App\Livewire\Partials;
 
-use Livewire\Component;
-use App\Models\Contact;
 use App\Jobs\SendContactMail;
+use App\Models\Contact;
+use Livewire\Component;
 
 class ContactForm extends Component
 {
-    public $name, $email, $message;
+     public $name, $email, $message;
 
     protected $rules = [
         'name' => 'required|min:3',
@@ -29,13 +29,10 @@ class ContactForm extends Component
         SendContactMail::dispatch($contact);
 
         session()->flash('message', 'Merci ! Votre message a bien été envoyé.');
-
         $this->reset('name', 'email', 'message');
     }
-
     public function render()
     {
         return view('livewire.partials.contact-form');
     }
 }
-
