@@ -82,10 +82,10 @@
                     class="text-lg sm:max-w-sm max-w-64  lg:text-3xl mb-8 transition-all duration-500  text-blue-100 animate-fade-in">
                     Security solutions & the latest technology
                 </p>
-                <button
+                <a id="hero-link" href="{{ route('home.home-security') }}"
                     class="btn border border-white rounded-[10px] text-md lg:text-lg px-8 lg:px-12 py-2 hover:bg-white hover:text-blue-600 transition-colors duration-500 cursor-pointer animate-fade-in">
                     LEARN MORE
-                </button>
+                </a>
             </div>
         </div>
 
@@ -96,12 +96,12 @@
                     <p class="text-lg sm:text-xl text-white font-semibold text-center sm:text-left">
                         Need some help? We are happy to assist you and answer your questions.
                     </p>
-                    <button class="btn-secondary flex items-center gap-3 text-lg sm:text-xl px-4 sm:px-6 py-2 sm:py-3 whitespace-nowrap">
+                    <a href="{{ route('contact') }}" class="btn-secondary flex items-center gap-3 text-lg sm:text-xl px-4 sm:px-6 py-2 sm:py-3 whitespace-nowrap">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
                         </svg>
                         Contact Us
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -135,14 +135,14 @@
                         Home is where the heart is. Protect your home - and what's inside -
                         with Interactive and Touchscreen security options.
                     </p>
-                    <button class="btn-secondary">
+                    <a href="{{ route('home.home-security') }}" class="btn-secondary">
                         LEARN MORE
-                    </button>
+                    </a>
                 </div>
             </div>
             <div class="relative min-h-[300px] lg:min-h-full">
                 <img src="{{ asset('images/home/interactive-security.jpg') }}"
-                     alt="Interactive Security" 
+                     alt="Interactive Security"
                      class="w-full h-full object-cover">
             </div>
         </div>
@@ -153,7 +153,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 h-full">
             <div class="order-2 lg:order-1 relative min-h-[300px] lg:min-h-full">
                 <img src="{{ asset('images/home/smart-control.jpg') }}"
-                     alt="Smart Control" 
+                     alt="Smart Control"
                      class="w-full h-full object-cover">
             </div>
             <div class="order-1 lg:order-2 flex flex-col justify-center items-center relative section-padding py-12 lg:py-16">
@@ -180,9 +180,9 @@
                         Home Automation keeps you protected and connected -
                         whenever you are, right from your smartphone!
                     </p>
-                    <button class="btn-secondary">
+                    <a href="{{ route('home.home-security') }}" class="btn-secondary">
                         LEARN MORE
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -216,14 +216,14 @@
                         you can budget. Installed fast-alarm devices provide advanced sensors for
                         smoke, fire, or carbon monoxide.
                     </p>
-                    <button class="btn-secondary">
+                    <a href="{{ route('home.home-security') }}" class="btn-secondary">
                         LEARN MORE
-                    </button>
+                    </a>
                 </div>
             </div>
             <div class="relative min-h-[300px] lg:min-h-full">
                 <img src="{{ asset('images/home/fire-safety.webp') }}"
-                     alt="Fire Safety" 
+                     alt="Fire Safety"
                      class="w-full h-full object-cover">
             </div>
         </div>
@@ -232,7 +232,7 @@
     <!-- Medical Alert Section -->
     <section class="min-h-[60vh] lg:min-h-[80vh] bg-white relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-radial from-primary-100/40 to-white"></div>
-        
+
         <!-- Geometric overlays -->
         <div style="clip-path: polygon(0 0, 100% 0%, 0 100%);"
                     class="absolute top-0 left-0 w-[20%] min-h-[70%] bg-primary-700/70 bg-opacity-70 ">
@@ -266,7 +266,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 h-full">
             <div class="order-2 lg:order-1 relative min-h-[300px] lg:min-h-full">
                 <img src="{{ asset('images/home/24-7-monitoring.jpg') }}"
-                     alt="24/7 Monitoring" 
+                     alt="24/7 Monitoring"
                      class="w-full h-full object-cover">
             </div>
             <div class="order-1 lg:order-2 relative flex flex-col justify-center items-center section-padding py-12 lg:py-16">
@@ -291,9 +291,9 @@
                         and round the clock professional monitoring, provided by a
                         company that knows the importance of prompt response times!
                     </p>
-                    <button class="btn-secondary">
+                    <a href="{{ route('about.index') }}" class="btn-secondary">
                         LEARN MORE
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -313,9 +313,15 @@
             'Interactive Security, Home Automation and Cameras for one affordable price.',
             'Innovation meets comfort'
         ];
+        const links = [
+            "{{ route('home.home-security') }}",
+            "{{ route('home.packages') }}",
+            "{{ route('home.cameras') }}"
+        ];
 
         const titleEl = document.getElementById('hero-title');
         const subtitleEl = document.getElementById('hero-subtitle');
+        const heroLink = document.getElementById('hero-link');
 
         let currentIndex = 0;
         let intervalId;
@@ -328,6 +334,7 @@
 
             titleEl.textContent = titles[index];
             subtitleEl.textContent = subtitles[index];
+            heroLink.href = links[index];
         }
 
         function showNextImage() {
@@ -353,7 +360,7 @@
         // Arrows
         document.getElementById('next-btn').addEventListener('click', () => {
             stopCarousel();
-            showNextImage(); 
+            showNextImage();
             startCarousel();
         });
 

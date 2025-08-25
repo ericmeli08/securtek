@@ -32,10 +32,10 @@
                 <p class="text-xl text-white font-semibold mb-2 sm:mb-0">
                     Need some help? We are happy to assist you and answer your questions.
                 </p>
-                <button class="btn-secondary flex items-center gap-5 text-xl px-6 py-3">
+                <a href="{{ route('contact') }}" class="btn-secondary flex items-center gap-5 text-xl px-6 py-3">
                     <i class="fa-solid fa-phone"></i>
                     Contact Us
-                </button>
+                </a>
             </div>
         </div>
     </section>
@@ -48,7 +48,7 @@
             <h2 class="text-3xl text-primary-700 font-bold mb-4">
                 Current Opportunites
             </h2>
-            
+
         </div>
     </section>
 </div>

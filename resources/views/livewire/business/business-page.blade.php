@@ -92,10 +92,11 @@
                     </ul>
                 </div>
                <div class="space-y-3 mt-4">
-                    <button class="w-full bg-accent-500 hover:bg-accent-600 btn-primary">CONTACT US</button>
-                    <button
+                    <a href="{{ route('contact') }}" class="w-full bg-accent-500 hover:bg-accent-600 btn-primary">CONTACT US</a>
+                    <a href="{{ route('home.packages') }}"
                         class="w-full bg-transparent text-accent-500 hover:bg-orange-500 border font-semibold border-orange-500 hover:text-white btn-primary">
-                        SEE ALL BUNDLESS</button>
+                        SEE ALL BUNDLESS
+                    </a>
                 </div>
             </div>
         </div>

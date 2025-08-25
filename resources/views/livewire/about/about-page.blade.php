@@ -65,10 +65,10 @@
                 <p class="text-xl text-white font-semibold mb-2 sm:mb-0">
                     Need some help? We are happy to assist you and answer your questions.
                 </p>
-                <button class="btn-secondary flex items-center gap-5 text-xl px-6 py-3">
+                <a href="{{ route('contact') }}" class="btn-secondary flex items-center gap-5 text-xl px-6 py-3">
                     <i class="fa-solid fa-phone"></i>
                     Contact Us
-                </button>
+                </a>
             </div>
         </div>
     </section>
@@ -331,10 +331,10 @@
         <section class="bg-blue-600 min-h-[30vh] flex items-center justify-center text-white py-16">
             <div class="max-w-7xl mx-auto px-4 flex gap-10 items-center sm:px-6 lg:px-8 text-center">
                 <h2 class="lg:text-5xl text-xl font-bold ">Our Locations</h2>
-                <button
+                <a href="{{ route('about.find-dealer') }}"
                     class="bg-securtek-lime text-white text-xl font-semibold py-3 px-8 rounded-lg hover:bg-lime-400 transition-colors">
                     FIND A DEALER
-                </button>
+                </a>
             </div>
         </section>
     </div>

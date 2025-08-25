@@ -167,7 +167,7 @@
                 </div>
 
                 <!-- Upgrade & Add ons -->
-                <div class="bg-orange-100 border-2 h-fit border-orange-400 rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow">
+                <div class="bg-orange-100 border-2 h-fit text-center border-orange-400 rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow">
                     <h3 class="text-5xl font-bold text-orange-600 mb-4">Upgrade & Add ons</h3>
                     <p class="text-lg font-semibold text-gray-700 mb-4">Get more from your system.</p>
                     <p class="text-gray-600 mb-6">
@@ -184,9 +184,9 @@
                         Contact your dealer for more information
                     </p>
 
-                    <button class="w-full hover:bg-orange-600 text-orange-600 border border-orange-600 hover:text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300">
+                    <a href="{{ route('about.find-dealer') }}" class="w-full mx-auto hover:bg-orange-600 text-orange-600 border border-orange-600 hover:text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300">
                         LEARN MORE
-                    </button>
+                    </a>
                 </div>
 
             </div>

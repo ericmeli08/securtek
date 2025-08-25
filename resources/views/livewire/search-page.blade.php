@@ -31,10 +31,10 @@
                 <p class="text-xl text-white font-semibold mb-2 sm:mb-0">
                     Need some help? We are happy to assist you and answer your questions.
                 </p>
-                <button class="btn-secondary flex items-center gap-5 text-xl px-6 py-3">
+                <a href="{{ route('contact') }}" class="btn-secondary flex items-center gap-5 text-xl px-6 py-3">
                     <i class="fa-solid fa-phone"></i>
                     Contact Us
-                </button>
+                </a>
             </div>
         </div>
     </section>
@@ -57,8 +57,8 @@
             </div>
 
             <div class="w-full flex items-center justify-end" >
-             
-    
+
+
                 <!-- Sort Options -->
                 <div class="flex border-b pb-5 mb-5 items-center gap-2 border-gray-300 justify-end w-full ">
                     <span> Sort by:</span>
